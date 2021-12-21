@@ -19,35 +19,39 @@ function Home2() {
               QUI <span className="purple"> SUIS </span> JE ?
             </h1>
             <p className="home-about-body">
-              Passionné par l'innovation depuis tout jeune, j… 🤷‍♂️
+            Passionné par l’innovation depuis tout jeune, je souhaite contribuer à l’évolution technologique de notre monde.  
               <br />
-              <br />Je suis particulièrement à l'aise en 
+              <br />Je suis particulièrement à l’aise en programmation dans le domaine des systèmes embarquées, notamment en 
               <i>
                 <b className="purple"> C, C++ et RUST. </b>
-              </i>
-              <br />
-              <br />
-              Je souhaiterai à terme, travailler dans le domaine des systèmes embarqués comme par exemple &nbsp;
+              </i> 
+              Je souhaiterai à terme, travailler dans une entreprise innovante et qui developpe de nouvelles technologies. &nbsp;
               <i>
-                <b className="purple">La robotique,  </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
+              <br />
+              <br />
+                <b className="purple"> La Robotique, l'Aéronautique  </b> et 
+                <b className="purple"> l'Automobile
+                </b> sont des domaines dans lequel j'aimerai pouvoir contribuer.
+
               </i>
               <br />
               <br />
-              Je souhaiterai en apprendre d'avantage dans le developpement software, en terme de logiciel <b className="purple">Node.js</b> and
+              Etant avide de connaissance, j'aimerai en apprendre d'avantage en
+              <b className="purple"> IA  </b> (Machine learning, Deep learning) et en
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                  développement d'application, logiciel, et web. 
+                </b> (Qt, React/Angular...).
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
+              <br />
+              <br />
+              <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}><i>
+            "Wisdom is not a product of schooling but of the lifelong attempt to acquire it."{" "}
               </i>
+              </p>
+              <footer className="blockquote-footer">Albert Einstein</footer>
+
             </p>
           </Col>
           <Col md={4} className="myAvtar">
