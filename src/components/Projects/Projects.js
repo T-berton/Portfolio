@@ -27,8 +27,8 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Chatify"
+              aymen="/hackathon"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
             />
           </Col>
 

@@ -6,6 +6,7 @@ import Resumecontent from "./ResumeContent";
 import axios from "axios";
 import pdf from "../../Assets/Soumyajit-Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -29,6 +30,7 @@ function Resume() {
   }, []);
 
   return (
+    <h1>TOOOOOOOOOOOOOOOOOOOOOOOOOOOTOOOOOOOOOOOOOOOOOOOOOO</h1>
     <Container fluid className="resume-section">
       <Particle />
       <Container>
@@ -37,6 +39,11 @@ function Resume() {
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
+          <Button variant="primary" href={pdf} target="_blank">
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+          
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">

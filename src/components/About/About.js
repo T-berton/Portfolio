@@ -1,17 +1,24 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
+      
       <Container>
+        <Link to="/">
+          <Button>
+              TOTOOOOOOOOOOOOO
+          </Button>
+        </Link>
+
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -45,7 +52,7 @@ function About() {
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Mes outils informatiques </strong> 
+          <strong className="purple">Mes outils informatiques </strong>
         </h1>
         <Toolstack />
 
