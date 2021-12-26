@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function ProjectCards(props) {
   return (
@@ -12,10 +13,12 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
+        <Link to={props.hackathon}>
+          <Button variant="primary">
+            <BiLinkExternal /> &nbsp;
+            {props.isBlog ? "View Blog" : "View Project"}
+          </Button>
+        </Link>
       </Card.Body>
     </Card>
   );

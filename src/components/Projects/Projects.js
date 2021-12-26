@@ -16,19 +16,20 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Mes récents <strong className="purple"> Projets </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Vous trouverez plusieurs projets que j'ai pu faire durant ma formation
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Hachkathon with KETI"
+              hackathon="/hackathon"
+              description="Le projet Safe city for Cyclists vise à aider les gens à identifier les zones dangereuses pour les cyclistes dans les villes. Ces zones seront accessibles au public et affichées sur une carte interactive sur une application android. Les informations seront recueillies à partir du vélo de chaque utilisateur, à l'aide de capteurs de distance (ultrason) pour détecter la distance et la vitesse des voitures qui passent à côté de chaque utilisateur. Notre système se compose également d'un GPS, afin de pouvoir géolocaliser les utilisateurs. Ces données seront ensuite récupérées par un Raspberry et envoyées à un serveur en utilisant le protocole oneM2M. Les utilisateurs pourront installer notre système sur leur vélo."
+
             />
           </Col>
 

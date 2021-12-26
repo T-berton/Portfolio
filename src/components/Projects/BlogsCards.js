@@ -1,16 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsLink } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function BlogsCards(props) {
   return (
-    <a
-      className="blog-link"
-      href={props.link}
-      target="_blank"
-      rel="noreferrer"
-      style={{ fontSize: "1.2em" }}
-    >
+    <Link to="/">
       <Card className="blog-card-view">
         <Card.Img variant="top" src={props.imgPath} className="blog-img" />
         <Card.Footer>
@@ -20,7 +15,7 @@ function BlogsCards(props) {
           <p style={{ marginBlockEnd: "0em" }}>{props.site}</p>
         </Card.Footer>
       </Card>
-    </a>
+    </Link>
   );
 }
 

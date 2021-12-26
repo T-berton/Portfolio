@@ -7,7 +7,7 @@ function Type() {
       options={{
         strings: [
           "Ingénieur Système Embarqué  ",
-          "Développement Enformatique ",
+          "Développement Informatique ",
           "IOT ",
           "Hardware ",
         ],
