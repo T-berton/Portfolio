@@ -13,6 +13,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
+import Home2 from "./components/Home/Home2";
+import hackathon from "./components/Hackathon/hackathon";
 
 function App() {
   const [load, upadateLoad] = useState(true);
