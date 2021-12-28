@@ -1,5 +1,5 @@
 import React from "react";
-import HackathonCard from "./HackathonCard";
+import ProjectIntegrateurCard from "./ProjectIntegrateurCard";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 

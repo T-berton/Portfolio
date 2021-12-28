@@ -12,13 +12,8 @@ import AboutMS from "./AboutMS";
 function About() {
   return (
     <Container fluid className="about-section">
-      
+      <Particle />
       <Container>
-        <Link to="/">
-          <Button>
-              TOTOOOOOOOOOOOOO
-          </Button>
-        </Link>
 
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -45,7 +40,7 @@ function About() {
 
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
-            md={9}
+            md={8}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
@@ -58,8 +53,8 @@ function About() {
         <AboutMS/>
           </Col>
           <Col
-            md={70}
-            style={{ paddingTop: "80px", paddingBottom: "20px" }}
+            md={4}
+            style={{ paddingTop: "180px", paddingBottom: "20px" }}
             className="about-logoiss"
           >
             <img src={logo_iss} alt="about" className="img-fluid" />

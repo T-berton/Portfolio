@@ -6,7 +6,7 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.jpeg";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import safe_city_for_cyclist from "../../Assets/Projects/safe_city_for_cyclist.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -24,11 +24,13 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={safe_city_for_cyclist}
               isBlog={false}
-              title="Hachkathon with KETI"
-              hackathon="/hackathon"
-              description="Le projet Safe city for Cyclists vise à aider les gens à identifier les zones dangereuses pour les cyclistes dans les villes. Ces zones seront accessibles au public et affichées sur une carte interactive sur une application android. Les informations seront recueillies à partir du vélo de chaque utilisateur, à l'aide de capteurs de distance (ultrason) pour détecter la distance et la vitesse des voitures qui passent à côté de chaque utilisateur. Notre système se compose également d'un GPS, afin de pouvoir géolocaliser les utilisateurs. Ces données seront ensuite récupérées par un Raspberry et envoyées à un serveur en utilisant le protocole oneM2M. Les utilisateurs pourront installer notre système sur leur vélo."
+              title="International Hackathon"
+              chemin="/hackathon"
+              description="Ce projet a été crée dans le cadre d'un Hackathon, il s'agit d'un concours international dans le domaine de l'IOT organisé par KETI (Korea Electronics Technology Ins-tute) et ETSI (European Telecommunication Standards Institute). Plusieurs université, écoles d'ingénieur (dont l'INSA Toulouse) du monde entier ont participé à ce concours. L'objectif est de construire une solution IoT qui
+              peut aider les citoyens, à résoudre des problèmes majeurs d'environnement et de société.
+              La seule règle à respecter est d'utiliser le protocole oneM2M. "
 
             />
           </Col>
@@ -37,9 +39,9 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Projet Innovant - Safe City For Cyclist "
+              chemin="/projectintegrateur"
+              description= "Il s'agit du plus gros projet sur lequel nous avons travaillé en équipe durant ma dernière année à l'INSA. "              
             />
           </Col>
 

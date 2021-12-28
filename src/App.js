@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Hackathon from "./components/Hackathon/Hackathon"
+import ProjectIntegrateur from "./components/ProjectIntegrateur/ProjectIntegrateur"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -14,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
 import Home2 from "./components/Home/Home2";
-import hackathon from "./components/Hackathon/hackathon";
+import hackathon from "./components/Hackathon/Hackathon";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
           <Route path="/hackathon" component={Hackathon} />
+          <Route path="/projetintegrateur" component={ProjectIntegrateur} />
         </Switch>
         <Footer />
       </div>
