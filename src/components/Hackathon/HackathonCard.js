@@ -19,6 +19,7 @@ C'est pourquoi le cycliste a besoin d'une plateforme qui le guiderait à travers
 
 <br/>
 <br/>
+Aujourd'hui, il y a 17 millions de cyclistes en France. Le nombre d'accidents ne cesse d'augmenter, on compte en effet près de 200 morts par an. De nombreuses villes sont mal équipées en termes d'insfrastructures cyclables et ne sont pas en mesure d'offrir un environnement sûr à leur cyclistes. Très souvent, les cyclsites se retrouvent à côtoyer les v
             
           </p>
 
