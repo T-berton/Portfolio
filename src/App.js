@@ -6,8 +6,9 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import Hackathon from "./components/Hackathon/Hackathon"
-import ProjectIntegrateur from "./components/ProjectIntegrateur/ProjectIntegrateur"
+import Hackathon from "./components/Hackathon/Hackathon";
+import ProjectIntegrateur from "./components/ProjectIntegrateur/ProjectIntegrateur";
+import CapteurGaz from "./components/CapteurGaz/CapteurGaz";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -16,6 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Home2 from "./components/Home/Home2";
 import hackathon from "./components/Hackathon/Hackathon";
+import InnovativeSmartSystem from "./components/InnovativeSmartSystem/InnovativeSmartSystem";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,6 +43,9 @@ function App() {
           <Route path="/resume" component={Resume} />
           <Route path="/hackathon" component={Hackathon} />
           <Route path="/projetintegrateur" component={ProjectIntegrateur} />
+          <Route path="/capteurgaz" component={CapteurGaz} />
+          <Route path="/ISS" component={InnovativeSmartSystem} />
+
         </Switch>
         <Footer />
       </div>

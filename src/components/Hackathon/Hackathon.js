@@ -17,7 +17,7 @@ function Hackathon() {
 
       <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
-            md={20}
+            md={12}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
@@ -60,7 +60,7 @@ function Hackathon() {
 
           <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
-            md={20}
+            md={12}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
@@ -77,27 +77,43 @@ function Hackathon() {
 
                   
 
-<Row style={{ justifyContent: "center", padding: "10px" }}>
-<Col
-  md={20}
-  style={{
-    justifyContent: "center",
-    paddingTop: "30px",
-  }}
->
+      <Row style={{ justifyContent: "center", padding: "10px" }}>
+      <Col
+      md={12}
+      style={{
+      justifyContent: "center",
+      paddingTop: "30px",
+      }}
+      >
 
-<h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-  Ma <strong className="purple">Contribution Personnelle </strong> 
-  </h1>  
-  <ContributionCard /> 
-</Col>
+      <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+      Ma <strong className="purple">Contribution Personnelle </strong> 
+      </h1>  
+      <ContributionCard /> 
+      </Col>
 
-</Row>
+      </Row>
 
+      <Row style={{ justifyContent: "center", padding: "10px" }}>
+      <Col
+      md={12}
+      style={{
+      justifyContent: "center",
+      paddingTop: "30px",
+      }}
+      >
 
-          </Container>
-          </Container>
-  );
-}
+      <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+      Notre <strong className="purple"> Résultat </strong> 
+      </h1>  
+      Mettre la vidéo 
+      </Col>
+
+      </Row>
+
+      </Container>
+      </Container>
+          );
+          }
 
 export default Hackathon;

@@ -19,7 +19,7 @@ function Projects() {
           Mes récents <strong className="purple"> Projets </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Vous trouverez plusieurs projets que j'ai pu faire durant ma formation
+          Vous trouverez plusieurs projets en rapport avec l'IOT et l'embarqué durant ma formation
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -40,8 +40,8 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Projet Innovant - Safe City For Cyclist "
-              chemin="/projectintegrateur"
-              description= "Il s'agit du plus gros projet sur lequel nous avons travaillé en équipe durant ma dernière année à l'INSA. "              
+              chemin="/projetintegrateur"
+              description= "Il s'agit du plus gros projet sur lequel nous avons travaillé en équipe durant ma dernière année à l'INSA. Ce projet a pour but de concevoir et developper une application en rapport avec l'IOT, et de présenter un premier prototype à la fin de la formation. Il était possible de choisir plusieurs projets en provenance d'entreprises. Dans mon cas, nous avons repris le même sujet du Hackathon international et nous l'avons grandement amélioré."              
             />
           </Col>
 
@@ -49,18 +49,25 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Réalisation d'un objet intelligent et connecté"
+              chemin="/capteurgaz"
+              description="A travers ce projet, nous devions réaliser la conception d'un Shield Arduino permettant l'utilisation d'un capteur de gaz à nanoparticules relié à une antenne LoRaWAN pour envoyer des données à une gateway."
             />
           </Col>
+          </Row>
+          </Container>
 
+          <Container>
+          <h1 className="project-heading">
+          Mes  <strong className="purple"> Autres Projets </strong>
+          </h1>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Développement logiciel d'une IHM sous Qt en C++"
+              description=""
               link="https://github.com/soumyajit4419/Bits-0f-C0de"
             />
           </Col>
@@ -69,8 +76,8 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Finaliste du concours régionale entreprenariat - CRECE"
+              description=""
               link="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col>
@@ -79,9 +86,8 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Développement d'un robot en RUST/C "
+              description="En construction...Il s'agit du sujet de mon alternance."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
           </Col>
