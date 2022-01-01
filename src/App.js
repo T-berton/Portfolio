@@ -17,7 +17,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Home2 from "./components/Home/Home2";
 import hackathon from "./components/Hackathon/Hackathon";
-import InnovativeSmartSystem from "./components/InnovativeSmartSystem/InnovativeSmartSystem";
+import  InnovativeSmartSystem from './components/InnovativeSmartSystem/InnovativeSmartSystem';
+import Smartdevice from "./components/InnovativeSmartSystem/SmartSystem";
+import Middleware from "./components/InnovativeSmartSystem/Middleware";
+import Protocole_communication from "./components/InnovativeSmartSystem/ProtocoleDeCommunication";
+import BigData from "./components/InnovativeSmartSystem/BigData";
+import ProjetInnovant from "./components/InnovativeSmartSystem/ProjetInnovant";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -45,6 +50,11 @@ function App() {
           <Route path="/projetintegrateur" component={ProjectIntegrateur} />
           <Route path="/capteurgaz" component={CapteurGaz} />
           <Route path="/ISS" component={InnovativeSmartSystem} />
+          <Route path="/Smartdevice" component={Smartdevice} />
+          <Route path="/Middleware" component={Middleware} />
+          <Route path="/Protocole_de_Communication" component={Protocole_communication} />
+          <Route path="/BigData" component={BigData} />
+          <Route path="/ProjetInnovant" component={ProjetInnovant} />
 
         </Switch>
         <Footer />

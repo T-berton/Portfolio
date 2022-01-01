@@ -91,7 +91,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Analyse du M2 "Innovative Smart Sytem"
+                M2 - Innovative Smart Sytem
               </Nav.Link>
             </Nav.Item>
 

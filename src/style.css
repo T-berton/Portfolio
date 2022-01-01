@@ -1,8 +1,8 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(255, 0, 0, 0.582),
-    rgba(64, 0, 255, 0.904)
+    rgba(70, 67, 67, 0.678),
+    rgba(92, 71, 194, 0.863)
   );
 
   --image-gradient: linear-gradient(
@@ -12,10 +12,14 @@ html {
   );
 
   --imp-text-color: #c770f0;
+  --imp-text-color2: #ffffff;
 }
 
 .purple {
   color: var(--imp-text-color) !important;
+}
+.blue{
+  color:var(--imp-text-color2);
 }
 
 /* --------- */
@@ -48,7 +52,7 @@ html {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 4px;
 }
 
 /* Track */
@@ -59,13 +63,13 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(222, 130, 235, 0.911);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* --------- */
@@ -540,8 +544,8 @@ html {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 40px !important;
+  padding-bottom: 0px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
