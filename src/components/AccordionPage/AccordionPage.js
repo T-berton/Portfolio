@@ -19,9 +19,9 @@ function AccordionPage() {
   return (
     <div className="App">
 
-    <Container fluid className="about-section">
-    <Row style={{paddingTop: "30px" }}>
-      <FullpageAccordion height="850px">
+
+
+      <FullpageAccordion height="900px">
       
         <Panel
           itemId="0"
@@ -98,9 +98,9 @@ function AccordionPage() {
         >
           <Particle/>
                <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
-        <a className="purple"> Projet Innovant</a>
+        <a className="purple"> Innovation et Humanité </a>
             </h1>  
-            <Link to="/Projetinnovant">
+            <Link to="/Innovation">
           <Button variant="primary">
           <a>En savoir plus...</a>
           </Button>
@@ -110,10 +110,9 @@ function AccordionPage() {
         </Panel>
         
       </FullpageAccordion>
-      </Row>
 
-      </Container>
- 
+
+
 
     </div>
   );

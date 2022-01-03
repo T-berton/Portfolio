@@ -22,7 +22,7 @@ import Smartdevice from "./components/InnovativeSmartSystem/SmartSystem";
 import Middleware from "./components/InnovativeSmartSystem/Middleware";
 import Protocole_communication from "./components/InnovativeSmartSystem/ProtocoleDeCommunication";
 import BigData from "./components/InnovativeSmartSystem/BigData";
-import ProjetInnovant from "./components/InnovativeSmartSystem/ProjetInnovant";
+import Innovation from "./components/InnovativeSmartSystem/Innovation";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -54,7 +54,7 @@ function App() {
           <Route path="/Middleware" component={Middleware} />
           <Route path="/Protocole_de_Communication" component={Protocole_communication} />
           <Route path="/BigData" component={BigData} />
-          <Route path="/ProjetInnovant" component={ProjetInnovant} />
+          <Route path="/Innovation" component={Innovation} />
 
         </Switch>
         <Footer />

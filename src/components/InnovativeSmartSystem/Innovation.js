@@ -5,10 +5,9 @@ import Card from "react-bootstrap/Card";
 
 
 
-
-function BigData() {
+function ProjetInnovant() {
   return (
-    <Container fluid className="about-section">
+<Container fluid className="about-section">
     <Particle />
     <Container>
       <Row style={{ justifyContent: "center", padding: "20px" }}>
@@ -20,14 +19,14 @@ function BigData() {
             paddingBottom: "10px",
           }}
         >
-          <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-            <strong> Descriptif et Analyse - Gestion des données </strong>
-          </a>
+          <h style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <strong> Descriptif et Analyse - Innovation et Humanité </strong>
+          </h>
           <br/>
           <br/>
           <p style={{textAlign:"justify"}}> 
-          Ce module est un introduction aux concepts de données massives "Big Data" et au Web Sémantique avec la notion d'ontologie.
-
+          Le métier d'ingénieur ne se résume pas qu'à un profil purement technique, il faut également avoir d'autres compétences transverses. Dans ce module nous avons eu l'occasion de découvrir une méthode lié à l'innovation, la méthode "TRIZ" ainsi que des cours sur l'aspect innovation d'un point de vue business. Etant en alternance, je n'ai pas encore pu suivre tous les cours liés au module Humanité comme la Psychologie (que je ferai au mois d'avril). 
+          
 
           </p>
           </Col>
@@ -45,21 +44,20 @@ function BigData() {
           }}
         >
           <h style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
-            <strong className="purple"> Big Data </strong>
-          </h>
+            <strong className="purple"> Innovation </strong>
+          </h>  
 
+ 
                   <Card className="quote-card-view">
           <Card.Body>
               <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
               <h1 style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
                   </h1>
-                  Le Big Data est au coeur de notre vie quotidienne à travers les objets connectés, les réseaux sociaux.... Ces cours nous ont permis de découvrir le concept de Machine Learning avec le "Clustering".
-
+                  L'objectif du cours "Innovation, Social Accetability and Business Development" est de nous présenter les outils de gestion utiles au développement de projets innovants. Nous avons pu découvrir différentes notions de gestion de projets et d'organisation qui sont favorable pour mettre en oeuvre des projets innovants.
                   <br/>
                   <br/>
-                  Nous avons réalisés plusieurs travaux pratiques pour appréhender le concept de Clustering. Le but est d'utiliser des approches mathématiques sur des jeux de données, pour pouvoir les classer et former des familles de données qui ont des similitudes entre eux. Nous avons découvert et tester trois différentes méthodes de clustering (KMEAN, DBSCAN et Agglomerative) sur plusieurs type de jeu de données.  
-
+                  Pour mettre en oeuvre les concepts appris, nous avons élaboré un briefing pour notre projet innovant. Vous pouvez le trouver ici.
               </p>
 
               </blockquote>
@@ -76,7 +74,7 @@ function BigData() {
           }}
         >
           <h style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
-            <strong className="purple"> Analyse de données sémantiques</strong>
+            <strong className="purple"> Méthode de Créativité - TRIZ </strong>
           </h>
 
           <Card className="quote-card-view">
@@ -85,19 +83,19 @@ function BigData() {
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
               <h1 style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
                   </h1>
-                  Le Web sémantique est une vision d'une extension du Web existant, qui fournit aux programmes logiciels des métadonnées (qui sont partagées et réutilisées entre plusieurs applications, entreprises...) interprétables par les machines. En conséquence, les ordinateurs sont en mesure de faire des interprétations significatives, de la même manière que les humains traitent les informations pour atteindre leurs objectifs. 
-                  Ce cours est donc une introduction à tous ces concepts.
-                  <br/>
-                  <br/>
-                  Pour mieux appréhender les différents concepts d'ontologies et de web semantiques, nous avons réalisés deux travaux pratiques. Le premier était de créer une ontologie sur les phénomènes météorologiques avec le logiciel "Protégé".
-    
+                Ce cours fais office d'introduction à la méthode TRIZ, qui est une méthode qui facilité la créativite pour résoudre des problèmes d'innovation pour un objet ou pour tout simplement pousser à la créativité d'une nouvelle invention.
+
+                <br/>
+                <br/>
+                Par binôme, nous devions appliquer la méthode TRIZ sur un objet spécifique afin de l'améliorer. Dans mon cas, nous avons décidé de l'appliquer sur la gourde. Vous pouvez trouver notre rapport ici.
+
               </p>
 
               </blockquote>
           </Card.Body>
           </Card>
-
           </Col>
+
           </Row>
 
           <Row style={{ justifyContent: "center", padding: "30px" }}>
@@ -124,4 +122,4 @@ function BigData() {
   );
 }
 
-export default BigData;
+export default ProjetInnovant;
