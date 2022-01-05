@@ -1,8 +1,8 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(70, 67, 67, 0.678),
-    rgba(92, 71, 194, 0.863)
+    rgba(8, 127, 182, 0.678),
+    rgba(192, 0, 240, 0.863)
   );
 
   --image-gradient: linear-gradient(
@@ -11,7 +11,7 @@ html {
     rgba(92, 71, 194, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: rgb(199, 112, 240);
   --imp-text-color2: #ffffff;
 }
 

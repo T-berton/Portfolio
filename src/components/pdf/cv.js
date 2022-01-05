@@ -17,10 +17,15 @@ inside the app. Otherwise you can use the external link of the pdf file*/
 function cvnew() {
   return (
     <div className="cv">
-      <Container fluid className="about-section w-100 d-flex justify-content-center mt-5">
-        <Document file={samplePDF}>
-          <Page pageNumber={1}></Page>
-        </Document>
+      <Container fluid className="about-section">
+        <Row style={{ justifyContent: "center", padding: "25px" }}>
+
+            <Document file={samplePDF}>
+              <Page pageNumber={1}></Page>
+            </Document>
+       
+          </Row>
+
       </Container>
 
     </div>

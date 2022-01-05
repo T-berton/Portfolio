@@ -3,13 +3,20 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Card from "react-bootstrap/Card";
 
+import capteur from "../../Assets/Matiere/SmartSystem_capteur.PNG";
+import { BsFillCaretRightFill } from "react-icons/bs";
+
+import ProgressBar from "@ramonak/react-progress-bar";
+import '../SkillsBar/style.css';
+import { CgEnter } from "react-icons/cg";
+
 
 function SmartSystem() {
   return (
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "30px" }}>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
           <Col
             md={12}
             style={{
@@ -19,56 +26,122 @@ function SmartSystem() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong> Descriptif et Analyse - Smart System</strong>
+              <strong className="purple"> Descriptif et Analyse - Smart System</strong>
             </a>
-            <br/>
-            <br/>
-            <p style={{textAlign:"justify"}}> 
-            Ce module est composé en deux matières : Introduction aux capteurs - Microcontrôleur et Open Source Hardware. Ce module a pour but de nous familiariser avec le monde de l'IOT. Un objet connecté étant toujours composé de capteurs, d'actionnaires et de micro-controleurs. Nous apprenons donc en détail ses différents dispositifs et apprenons à les interfacer entre eux.
+            <br />
+            <br />
+            <p style={{ textAlign: "justify" }}>
+              Les systèmes intelligents basés sur des capteurs et des actionneurs sont partout dans notre vie quotidienne.
+              Ce module est composé en deux matières : Introduction aux capteurs - Microcontrôleur et Open Source Hardware. A travers ce module, nous suivons le processus complet de création d'un capteur de gaz intelligent, depuis le dépôt de nanoparticules jusqu'à l'acquisition du signal sur un microcontrôleur et la communication LoRa.
             </p>
-            </Col>
+          </Col>
 
-            </Row>
+        </Row>
 
 
-            <Row style={{ justifyContent: "center", padding: "0px" }}>
+
+        <Row style={{ justifyContent: "center", paddingBot: "50px" }}>
           <Col
-            md={6}
+            md={12}
             style={{
               justifyContent: "center",
               paddingTop: "10px",
               paddingBottom: "10px",
             }}
           >
-            <h style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
+            <h style={{ fontSize: "2.4em", paddingBottom: "0px" }}>
               <strong className="purple"> Introduction aux capteurs </strong>
             </h>
+          </Col>
 
-                    <Card className="quote-card-view">
-            <Card.Body>
-                <blockquote className="blockquote mb-0">
-                <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                <h1 style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-                    </h1>
-                    Pour nous introduire les différents capteurs existants et comment les implémenter, nous avons d'abord fais une semaine de stage dans un laboratoire afin de réaliser son propre capteur. Dans notre cas il s'agissait d'un capteur de gaz à nano-particules. Ensuite nous avons vu comment les implémenter avec des montages électriques dits « conditionneurs » (pont, amplificateurs...) qui leur sont associés pour optimiser leurs performances et récupérer leurs données.
-                    <br/>
-                    <br/>
-                    Après avoir conçu et developpé notre propre capteur de gaz, nous avons dû présenter ses différents caractéristiques à travers sa datasheet. Vous trouverez la datasheet de mon capteur <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
+              <strong className="blue"> Description du module </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Pour nous introduire le cours sur l'introduction de capteurs nous avons d'abord effectuer une semaine de stage dans l'AIME (laboratoire de recherche) afin de réaliser son propre capteur. Dans notre cas il s'agissait d'un capteur de gaz à nano-particules.
+              </p>
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                <BsFillCaretRightFill className="blue" /> Etape 1 : Photolitographie <br />
+                Gravure d'une plaquette de silicium à partir d'un masque avec le principe de la photolitographie <br />
+                <BsFillCaretRightFill className="blue" /> Etape 2 : Fabrication et dépôt des nanoparticules <br />
+                Utilisation d'un processus chimique pour les créer <br />
+                <BsFillCaretRightFill className="blue" /> Etape 3 : Diélectrophorèse de nanoparticules <br />
+                Dépôt d'une goutte de la solution dilué contenant les nanoparticules sur l'ensemble du circuit du capteur, puis nous avons appliqué un champ électrique uniquement sur la partie des peignes intercalés. Ainsi, les particules n'ont "collé" que sur la partie souhaitée lorsque nous avons rincé la solution dans l'eau.
 
-                    <br/>
-                    <br/>
-                    Ayant suivi une formation en electronique et automatique auparavant, je n'ai eu aucune difficultés à appréhender ce cours. Nous avions déjà vu toutes ses notions mais cela m'a permis d'avoir un rappel sur plusieurs montages electriques.
-                   
+              </p>
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
 
-                </p>
+                Après avoir conçu et developpé notre propre capteur de gaz, nous avons dû présenter ses différents caractéristiques à travers sa datasheet. Vous trouverez la datasheet de mon capteur <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
 
-                </blockquote>
-            </Card.Body>
-            </Card>
-            </Col>
+              </p>
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Enfin nous avons vu comment les implémenter avec des montages électriques dits « conditionneurs » (pont, amplificateurs...) qui leur sont associés pour optimiser leurs performances et récupérer leurs données.
+              </p>
+            </blockquote>
 
-            <Col
-            md={6}
+
+
+          </Col>
+
+
+          <Col md={5} style={{ paddingTop: 50 }}>
+            <img src={capteur} className="img-fluid" />
+          </Col>
+
+          <Col md={12} style={{ paddingBot: 50 }}>
+            <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
+              <strong className="blue"> Compétences acquises </strong>
+            </h>
+            
+            <ProgressBar
+              completed={100}
+              // customLabel="Comprendre les notions de base des capteurs et des chaîne de mesure: aspects physique/électronique et métrologique "
+              labelColor="#ffffff"
+              bgColor="#2d1950"
+              className="wrapper"
+              animateOnRender={true}
+              labelClassName="label"
+            />
+
+
+<br/>
+<br/>
+
+            <ProgressBar
+              completed={80}
+              // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+              labelColor="#ffffff"
+              bgColor="#2d1950"
+              className="wrapper"
+              animateOnRender={true}
+              labelClassName="label"
+            />
+
+            <blockquote className="blockquote mb-0">
+
+              <p style={{ justifyContent: "center", textAlign: "justify" }}>
+
+              </p>
+            </blockquote>
+
+          </Col>
+
+        </Row>
+
+
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+
+          <Col
+            md={12}
             style={{
               justifyContent: "center",
               paddingTop: "10px",
@@ -79,49 +152,54 @@ function SmartSystem() {
               <strong className="purple"> Microcontrôleur et Open Source Hardware </strong>
             </h>
 
-            <Card className="quote-card-view">
-            <Card.Body>
-                <blockquote className="blockquote mb-0">
-                <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                <h1 style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-                    </h1>
-                   Un objet connecté est un système comprenent un ensemble (capteur, actionneur et Microcontrôleur), nous avons vu à travers cette matière comment les associer ensemble dans un cas pratique. Il était question de réaliser un shield Arduino. Vous trouverez plus d'explications <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a> 
-                    <br/>
-                    <br/>
-                    Je n'ai pas eu vraiment de difficultés à réaliser le projet car il s'agissait de beaucoup de rappel que nous avons déjà eu l'occasion de voir dans les années passés. J'ai par contre appris sur l'aspect réseaux, notamment à implémenter une carte LoRaWAN à un Microcontrôleur et comment le connecter à une gateway (TheThingsNetwork). Les montages electriques et le routage sur KICAD étaient de bons rappels.
-                   
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Un objet connecté est un système comprenent un ensemble (capteur, actionneur et Microcontrôleur), nous avons vu à travers cette matière comment les associer ensemble dans un cas pratique. Il était question de réaliser objet connecté et intelligent à partir du capteur de gaz fabriqué. Vous trouverez plus d'explications <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
+              </p>
 
-                </p>
+            </blockquote>
 
-                </blockquote>
-            </Card.Body>
-            </Card>
 
-            </Col>
+          </Col>
 
-            </Row>
-
-            <Row style={{ justifyContent: "center", padding: "30px" }}>
-          <Col
-            md={12}
-            style={{
-              justifyContent: "center",
-              paddingTop: "10px",
-              paddingBottom: "10px",
-            }}
-          >
-            <h style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-            <strong className="purple"> Tableau récapitulatif des  Compétences </strong>
+          <Col md={12} style={{ paddingBot: 50 }}>
+            <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
+              <strong className="blue"> Problèmes rencontrés </strong>
             </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                <BsFillCaretRightFill className="blue" /> La première chose à faire était de pouvoir faire communiquer une carte Lora avec une gateway. Nous avons souhaité au départ crée notre propre bibliothèque en C, mais nous avons eu quelques difficultés dès le départ notamment lors de l'initialisation du Lora. Par manque de temps, nous sommes donc partis directement avec le framework Arduino pour nous simplifier les codes. C'était la première fois que moi et mon binôme manipulons un Lora, mais comme nous venions tout les deux d'une formation en electronique, nous n'avions pas eu de difficultés à brancher, relier notre Lora avec notre microcontroleur (nous avons choisis un ESP32) et de mettre en place la communication.
+                <br />
+                <BsFillCaretRightFill className="blue" /> Concernant les schémas electriques du circuit, nous avons voulu rajouter d'autres circuits comme notamment un PID (pour maintenir une certaine température du capteur) et un comparateur (LT071) pour déclencher une interruption matérielle sur notre microcontroleur
+              </p>
+              <p style={{ justifyContent: "center", textAlign: "justify" }}>
+                Finalement, comme j'ai suivi une formation en electronique et automatique auparavant, je n'ai eu aucune difficultés à appréhender ce cours. Nous avions déjà vu toutes ses notions mais cela m'a permis d'avoir un rappel sur plusieurs montages electriques.
 
-            </Col>
+              </p>
 
-            </Row>
+            </blockquote>
+          </Col>
 
-            
+          <Col md={12} style={{ paddingBot: 50 }}>
+            <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
+              <strong className="blue"> Compétences acquises </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
 
-          </Container>
-          </Container>
+              <p style={{ justifyContent: "center", textAlign: "justify" }}>
+                Je n'ai pas eu vraiment de difficultés à réaliser le projet car il s'agissait de beaucoup de rappel que nous avons déjà eu l'occasion de voir dans les années passés. J'ai par contre appris sur l'aspect réseaux, notamment à implémenter une carte LoRaWAN à un Microcontrôleur et comment le connecter à une gateway (TheThingsNetwork). Les montages electriques et le routage sur KICAD étaient de bons rappels.
+
+              </p>
+            </blockquote>
+          </Col>
+
+        </Row>
+
+
+
+
+      </Container >
+    </Container >
   );
 }
 

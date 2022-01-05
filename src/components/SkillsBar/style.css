@@ -1,0 +1,11 @@
+.label {
+  font-size: 16px;
+  justify-content: left;
+  text-align: justify;
+  margin-right: 100px;
+}
+
+.wrapper {
+  border: 1px solid #1C6EA4;
+border-radius: 17px;
+}
