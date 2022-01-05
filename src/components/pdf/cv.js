@@ -1,23 +1,30 @@
 import React from "react";
+import samplePDF from "../../CV_Berton.pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import { Container, Row, Col } from "react-bootstrap";
+import SinglePagePDFViewer from "./single-page";
 
-import SinglePagePDFViewer from "single-page";
+
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 
 /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
-import samplePDF from "CV_Berton.pdf";
 
 
-function cv() {
-    return (
-    <div className="App">
-      <h4>Single Page</h4>
-      <SinglePagePDFViewer pdf={samplePDF} />
 
-      <hr />
+function cvnew() {
+  return (
+    <div className="cv">
+      <Container fluid className="about-section w-100 d-flex justify-content-center mt-5">
+        <Document file={samplePDF}>
+          <Page pageNumber={1}></Page>
+        </Document>
+      </Container>
 
-      <hr />
     </div>
   );
 }
 
-export default cv;
+export default cvnew;

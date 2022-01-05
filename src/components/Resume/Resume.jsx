@@ -30,7 +30,6 @@ function Resume() {
   }, []);
 
   return (
-    <h1>TOOOOOOOOOOOOOOOOOOOOOOOOOOOTOOOOOOOOOOOOOOOOOOOOOO</h1>
     <Container fluid className="resume-section">
       <Particle />
       <Container>
