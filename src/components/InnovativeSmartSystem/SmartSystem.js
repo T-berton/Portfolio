@@ -4,6 +4,7 @@ import Particle from "../Particle";
 import Card from "react-bootstrap/Card";
 
 import capteur from "../../Assets/Matiere/SmartSystem_capteur.PNG";
+import rn2483 from "../../Assets/Matiere/SmartSystem_RN2483.PNG";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
 import ProgressBar from "@ramonak/react-progress-bar";
@@ -94,45 +95,52 @@ function SmartSystem() {
 
 
           <Col md={5} style={{ paddingTop: 50 }}>
-            <img src={capteur} className="img-fluid" />
+            <img src={capteur} className="img-fluid rounded" />
           </Col>
 
           <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Compétences acquises </strong>
             </h>
-            
-            <ProgressBar
-              completed={100}
-              // customLabel="Comprendre les notions de base des capteurs et des chaîne de mesure: aspects physique/électronique et métrologique "
-              labelColor="#ffffff"
-              bgColor="#2d1950"
-              className="wrapper"
-              animateOnRender={true}
-              labelClassName="label"
-            />
+            <div className="mt-3" style={{ textAlign: "start" }}>
+              <label>Comprendre les notions de base des capteurs et des chaîne de mesure: aspects physique/électronique et métrologique </label>
+              <ProgressBar
+                completed={100}
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+              <br />
+              <br />
+              <label>Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique</label>
+              <ProgressBar
+                completed={80}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
 
-
-<br/>
-<br/>
-
-            <ProgressBar
-              completed={80}
-              // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
-              labelColor="#ffffff"
-              bgColor="#2d1950"
-              className="wrapper"
-              animateOnRender={true}
-              labelClassName="label"
-            />
-
-            <blockquote className="blockquote mb-0">
-
-              <p style={{ justifyContent: "center", textAlign: "justify" }}>
-
-              </p>
-            </blockquote>
-
+              <br />
+              <br />
+              <label>Etre capable de concevoir la datasheet du capteur fabriqué </label>
+              <ProgressBar
+                completed={80}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+            </div>
           </Col>
 
         </Row>
@@ -144,14 +152,24 @@ function SmartSystem() {
             md={12}
             style={{
               justifyContent: "center",
-              paddingTop: "10px",
-              paddingBottom: "10px",
+
             }}
           >
-            <h style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
+            <h style={{ fontSize: "2.1em"}}>
               <strong className="purple"> Microcontrôleur et Open Source Hardware </strong>
             </h>
+          </Col>
 
+          <Col
+            md={9}
+            style={{
+              justifyContent: "center",
+            }}
+          >
+
+            <h style={{ fontSize: "1.4em"}}>
+              <strong className="blue"> Description du module </strong>
+            </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Un objet connecté est un système comprenent un ensemble (capteur, actionneur et Microcontrôleur), nous avons vu à travers cette matière comment les associer ensemble dans un cas pratique. Il était question de réaliser objet connecté et intelligent à partir du capteur de gaz fabriqué. Vous trouverez plus d'explications <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
@@ -161,8 +179,11 @@ function SmartSystem() {
 
 
           </Col>
+          <Col md={3} style={{ paddingTop: 0}}>
+            <img src={rn2483} className="img-fluid rounded" />
+          </Col>
 
-          <Col md={12} style={{ paddingBot: 50 }}>
+          <Col md={12} style={{paddingBot:50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Problèmes rencontrés </strong>
             </h>
@@ -181,16 +202,94 @@ function SmartSystem() {
           </Col>
 
           <Col md={12} style={{ paddingBot: 50 }}>
-            <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+            <h style={{ fontSize: "1.4em" }}>
+              <strong textAlign="center"> Compétences acquises </strong>
             </h>
-            <blockquote className="blockquote mb-0">
 
-              <p style={{ justifyContent: "center", textAlign: "justify" }}>
-                Je n'ai pas eu vraiment de difficultés à réaliser le projet car il s'agissait de beaucoup de rappel que nous avons déjà eu l'occasion de voir dans les années passés. J'ai par contre appris sur l'aspect réseaux, notamment à implémenter une carte LoRaWAN à un Microcontrôleur et comment le connecter à une gateway (TheThingsNetwork). Les montages electriques et le routage sur KICAD étaient de bons rappels.
+            <br />
+            <div className="mt-3" style={{ textAlign: "start" }}>
+              <label className="text-start">Comprendre l'architecture des microcontrôleurs et savoir les utiliser  </label>
+              <ProgressBar
+                completed={100}
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
 
-              </p>
-            </blockquote>
+              <br />
+              <br />
+              <label className="text-start">Etre capable de dimensionner l'ensemble (capteur + conditionneur + microcontroleur) en fonction de l’application </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+
+              <br />
+              <br />
+              <label className="text-center">Etre capable de concevoir l'électronique de conditionnement du signal du capteur (design + simulation) 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="center">Etre capable de réaliser un shield permettant d'interfacer le capteur de gaz à nanoparticules 	 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-center">Etre capable de réaliser le logiciel associé et l’interface homme/machine éventuelle 		 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-center">Etre capable d'intégrer le tout pour réaliser un smart devices 		 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+            </div>
           </Col>
 
         </Row>
