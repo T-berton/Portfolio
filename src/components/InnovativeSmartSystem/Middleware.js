@@ -140,7 +140,7 @@ function Middleware() {
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
 
 
-                A travers ce module, nous avons appris à implémenter deux protocoles middlewarequi sont OM2M et
+                A travers ce module, nous avons appris à implémenter deux protocoles middleware qui sont OM2M et
                 MQTT. Ces deux protocoles fonctionnent différemment, MQTT est un protocole pub-sub alors que OM2M est basé sur HTTP. Développé par le LAAS-CNRS, OM2M fournit une plateforme pour développer des services pour un réseau d’appareils hétérogènes.
               </p>
             </blockquote>
@@ -216,7 +216,7 @@ function Middleware() {
                 - PAAS 'Platform As A Service'<br />
                 - SAAS 'Software As A Service'<br />
                 <br />
-                Pendant les travaux pratiques, nous nous sommes concentré sur l'IAAS. L'objectif principal de ces TPs était de nous initier à la plateforme Openstack pour la création d'une topologie virtualisé.
+                L'objectif principal de ces TPs était de nous initier à la plateforme Openstack pour la création d'une topologie virtualisé.
               </p>
             </blockquote>
           </Col>
@@ -235,9 +235,11 @@ function Middleware() {
 
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-            Pendant les séances de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers. Je n'avais aucune connaissance dans ce domaine, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
+              <BsFillCaretRightFill className="blue" /> Pendant la première séance de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers. 
+              Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
               <br/>
-    
+              <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux container en utilisant Docker. Nous avons fais plusieurs essaies de communications entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
+              <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau. Heureusement que le professeur a pu nous montrer comment faire et nous guider.
 
               </p>
             </blockquote>
