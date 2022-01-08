@@ -7,6 +7,7 @@ import broker from "../../Assets/Matiere/Middleware_broker.PNG";
 import cloud from "../../Assets/Matiere/Middleware_cloud.PNG";
 import om2m from "../../Assets/Matiere/Middleware_OM2M.png";
 import { BsFillCaretRightFill } from "react-icons/bs";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 
 
@@ -120,6 +121,49 @@ function Middleware() {
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Compétences acquises </strong>
             </h>
+
+            <div className="mt-3" style={{ textAlign: "start" }}>
+              <label className="text-start">Savoir définir une architecture orientées services (SOA)     </label>
+              <ProgressBar
+                completed={100}
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-start">Déployer une architecture SOA en mettant en place des services web  </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+
+              <br />
+              <br />
+              <label className="text-center">Intégrer un orchestrateur de services dans une architecture SOA 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+              </div>
+
           </Col>
         </Row>
 
@@ -191,6 +235,76 @@ function Middleware() {
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Compétences acquises </strong>
             </h>
+            
+            <div className="mt-3" style={{ textAlign: "start" }}>
+              <label className="text-start">Savoir positionner les standards principaux de l’Internet des Objets    </label>
+              <ProgressBar
+                completed={100}
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-start">Déployer une architecture conforme à un standard et mettre en place un système du réseau de capteurs aux services  </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+
+              <br />
+              <br />
+              <label className="text-center">Déployer et configurer une architecture IoT en utilisant OM2M  	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="center">Interagir avec les objets en utilisant une architecture REST  	 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-center">Intégrer un nouvelle technologie d’objets dans une architecture IoT 		 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+            </div>
           </Col>
         </Row>
 
@@ -238,8 +352,10 @@ function Middleware() {
               <BsFillCaretRightFill className="blue" /> Pendant la première séance de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers. 
               Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
               <br/>
+              <br/>
               <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux container en utilisant Docker. Nous avons fais plusieurs essaies de communications entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
-              <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau. Heureusement que le professeur a pu nous montrer comment faire et nous guider.
+              <br/><br/>
+              <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau, mais le professeur a pu nous montrer comment faire et nous guider.
 
               </p>
             </blockquote>
@@ -256,6 +372,90 @@ function Middleware() {
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Compétences acquises </strong>
             </h>
+
+            <div className="mt-3" style={{ textAlign: "start" }}>
+              <label className="text-start">Savoir définir une architecture orientées services (SOA)   </label>
+              <ProgressBar
+                completed={100}
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-start">Comprendre la notion de cloud  </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+
+              <br />
+              <br />
+              <label className="text-center">Utiliser une infrastructure de cloud dans un mode Infrastructure As A Service 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="center">Déployer et adapter de manière autonomique une plate-forme pour l’Internet des Objets sur le cloud 	 	 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-center">Déployer une architecture PaaS basée sur OM2M 		 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+
+              <br />
+              <br />
+              <label className="text-center">Rendre autonomique une architecture PaaS 		 </label>
+              <ProgressBar
+                completed={100}
+                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
+                labelColor="#ffffff"
+                labelAlignment="center"
+                bgColor="#2d1950"
+                className="wrapper"
+                animateOnRender={true}
+                labelClassName="label"
+              />
+            </div>
           </Col>
         </Row>
 
