@@ -17,10 +17,7 @@ function HackathonCard() {
 C'est pourquoi le cycliste a besoin d'une plateforme qui le guiderait à travers la ville en toute sécurité, soit en utilisant uniquement les pistes cyclables, soit en utilisant les routes pour voitures qui seraient considérées comme les plus sûres. De telles plateformes existent déjà mais ne sont pas automatisées (comme l'application Geovelo). Les utilisateurs doivent s'arrêter pour signaler les zones dangereuses sur leur téléphone, ce qu'ils peuvent facilement oublier de faire.
  La plateforme serait également un moyen pour l'administration en charge de la planification urbaine de mieux comprendre où implanter leurs prochaines pistes cyclables et comment entretenir celles qui existent déjà.
 
-<br/>
-<br/>
-Aujourd'hui, il y a 17 millions de cyclistes en France. Le nombre d'accidents ne cesse d'augmenter, on compte en effet près de 200 morts par an. De nombreuses villes sont mal équipées en termes d'insfrastructures cyclables et ne sont pas en mesure d'offrir un environnement sûr à leur cyclistes. Très souvent, les cyclsites se retrouvent à côtoyer les v
-            
+
           </p>
 
         </blockquote>

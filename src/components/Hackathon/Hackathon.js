@@ -4,8 +4,13 @@ import SolutionCard from "./SolutionCard";
 import ContributionCard from "./ContributionCard";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Architecture_hack from "../../Assets/Projects/Architecture_hack-removebg-preview.png";
-import Hardware_hack from "../../Assets/Projects/Hardware_hack-removebg-preview.png"
+import Architecture_hack from "../../Assets/Projects/hackathon.PNG";
+import Hardware_hack from "../../Assets/Projects/hackathon2.PNG"
+import { Button, ButtonGroup, DropdownButton, Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import { ReactVideo } from "reactjs-media";
+import video from "../../Assets/Projects/hackathon_final.mp4";
 
 
 function Hackathon() {
@@ -33,7 +38,7 @@ function Hackathon() {
 
         <Row style={{ justifyContent: "center", padding: "0px" }}>
           <Col
-            md={6}
+            md={12}
             style={{
               justifyContent: "center",
               paddingTop: "0px",
@@ -44,17 +49,7 @@ function Hackathon() {
             <HackathonCard />
             </Col>
 
-            <Col
-            md={6}
-            style={{ paddingTop: "150px", paddingBottom: "10px" }}
-            className="about-img"
-          >
-            <img src={Architecture_hack} alt="about" className="img-fluid" />
-            <br />
-            <br />
 
-            <img src={Hardware_hack} alt="about" className="img-fluid" />
-          </Col>
           
           </Row>
 
@@ -73,8 +68,25 @@ function Hackathon() {
             <SolutionCard /> 
           </Col>
 
-        </Row>
 
+       
+        <Col
+            md={6}
+            style={{ paddingTop: "10px", paddingBottom: "10px" }}
+            className="about-img"
+          >
+            <img src={Architecture_hack} alt="about" className="img-fluid rounded" />
+
+            </Col>
+            <Col
+            md={6}
+            style={{ paddingTop: "10px", paddingBottom: "10px" }}
+            className="about-img"
+          >
+            <img src={Hardware_hack} alt="about" className="img-fluid rounded" />
+          </Col>
+
+          </Row>
                   
 
       <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -110,8 +122,11 @@ function Hackathon() {
       </Col>
 
       </Row>
-
+      <video  id='video'>
+        <source src={video} width="750" height="500" controls type='video/mp4'/>
+      </video>
       </Container>
+
       </Container>
           );
           }
