@@ -8,10 +8,18 @@ import Architecture_hack from "../../Assets/Projects/hackathon.PNG";
 import Hardware_hack from "../../Assets/Projects/hackathon2.PNG"
 import { Button, ButtonGroup, DropdownButton, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-import { ReactVideo } from "reactjs-media";
+import "../../../node_modules/video-react/dist/video-react.css";
 import video from "../../Assets/Projects/hackathon_final.mp4";
-
+import {
+  Player,
+  ControlBar,
+  ReplayControl,
+  ForwardControl,
+  CurrentTimeDisplay,
+  TimeDivider,
+  PlaybackRateMenuButton,
+  VolumeMenuButton
+} from 'video-react';
 
 function Hackathon() {
   return (
@@ -20,7 +28,7 @@ function Hackathon() {
       <Container>
 
 
-      <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={12}
             style={{
@@ -29,9 +37,9 @@ function Hackathon() {
             }}
           >
 
-        <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
-        <strong className="purple"> Hackathon </strong>
-            </h1>  
+            <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
+              <strong className="purple"> Hackathon </strong>
+            </h1>
           </Col>
 
         </Row>
@@ -47,13 +55,13 @@ function Hackathon() {
           >
 
             <HackathonCard />
-            </Col>
+          </Col>
 
 
-          
-          </Row>
 
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
+        </Row>
+
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={12}
             style={{
@@ -62,23 +70,23 @@ function Hackathon() {
             }}
           >
 
-        <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-        Notre  <strong className="purple"> Solution </strong>
-            </h1>  
-            <SolutionCard /> 
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Notre  <strong className="purple"> Solution </strong>
+            </h1>
+            <SolutionCard />
           </Col>
 
 
-       
-        <Col
+
+          <Col
             md={6}
             style={{ paddingTop: "10px", paddingBottom: "10px" }}
             className="about-img"
           >
             <img src={Architecture_hack} alt="about" className="img-fluid rounded" />
 
-            </Col>
-            <Col
+          </Col>
+          <Col
             md={6}
             style={{ paddingTop: "10px", paddingBottom: "10px" }}
             className="about-img"
@@ -86,49 +94,58 @@ function Hackathon() {
             <img src={Hardware_hack} alt="about" className="img-fluid rounded" />
           </Col>
 
-          </Row>
-                  
+        </Row>
 
-      <Row style={{ justifyContent: "center", padding: "10px" }}>
-      <Col
-      md={12}
-      style={{
-      justifyContent: "center",
-      paddingTop: "30px",
-      }}
-      >
 
-      <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-      Ma <strong className="purple">Contribution Personnelle </strong> 
-      </h1>  
-      <ContributionCard /> 
-      </Col>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+            }}
+          >
 
-      </Row>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Ma <strong className="purple">Contribution Personnelle </strong>
+            </h1>
+            <ContributionCard />
+          </Col>
 
-      <Row style={{ justifyContent: "center", padding: "10px" }}>
-      <Col
-      md={12}
-      style={{
-      justifyContent: "center",
-      paddingTop: "30px",
-      }}
-      >
+        </Row>
 
-      <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-      Notre <strong className="purple"> Résultat </strong> 
-      </h1>  
-      Mettre la vidéo 
-      </Col>
+        <Row style={{ justifyContent: "center", paddingBottom: "40px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+            }}
+          >
 
-      </Row>
-      <video  id='video'>
-        <source src={video} width="750" height="500" controls type='video/mp4'/>
-      </video>
+            <h1 style={{ fontSize: "2.1em" }}>
+              Notre <strong className="purple"> Résultat </strong>
+            </h1>
+            <Player>
+              <source src={video} />
+              <ControlBar>
+                <ReplayControl seconds={10} order={1.1} />
+                <ForwardControl seconds={30} order={1.2} />
+                <CurrentTimeDisplay order={4.1} />
+                <TimeDivider order={4.2} />
+                <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} order={7.1} />
+                <VolumeMenuButton disabled />
+              </ControlBar>
+            </Player>
+          </Col>
+
+        </Row>
+
       </Container>
 
-      </Container>
-          );
-          }
+
+    </Container>
+  );
+}
 
 export default Hackathon;
