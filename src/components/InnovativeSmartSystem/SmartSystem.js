@@ -117,7 +117,7 @@ function SmartSystem() {
               <br />
               <label>Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique</label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -131,7 +131,7 @@ function SmartSystem() {
               <br />
               <label>Etre capable de concevoir la datasheet du capteur fabriqué </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -155,7 +155,7 @@ function SmartSystem() {
 
             }}
           >
-            <h style={{ fontSize: "2.1em"}}>
+            <h style={{ fontSize: "2.1em" }}>
               <strong className="purple"> Microcontrôleur et Open Source Hardware </strong>
             </h>
           </Col>
@@ -167,7 +167,7 @@ function SmartSystem() {
             }}
           >
 
-            <h style={{ fontSize: "1.4em"}}>
+            <h style={{ fontSize: "1.4em" }}>
               <strong className="blue"> Description du module </strong>
             </h>
             <blockquote className="blockquote mb-0">
@@ -179,11 +179,11 @@ function SmartSystem() {
 
 
           </Col>
-          <Col md={3} style={{ paddingTop: 0}}>
+          <Col md={3} style={{ paddingTop: 0 }}>
             <img src={rn2483} className="img-fluid rounded" />
           </Col>
 
-          <Col md={12} style={{paddingBot:50 }}>
+          <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
               <strong className="blue"> Problèmes rencontrés </strong>
             </h>
@@ -294,6 +294,32 @@ function SmartSystem() {
 
         </Row>
 
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            </a>
+
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+              Le module "Smart Device" est le module sur lequel j'étais je pense le plus à l'aise techniquement. C'était l'un des cours les moins orientés vers les compétences logicielles, reposant davantage sur l'électronique, l'informatique embarqué et les connaissances en physique. Grâce ma formation d'AE, je n'ai pas eu de difficultés à appréhender toutes les compétences nécessaires. <br/>
+              <br/>
+Pour le cours d'introduction aux capteurs, nous avions déjà fait une semaine à l'AIME lors de ma deuxième année en IMACS où l'on a réalise une cellule photovoltaïque. De plus mes connaissances en physique et chimie acquises lors des premières années à l'INSA m'ont permis de bien comprendre les notions pour la fabricaiton du capteur à nano-particule. En ce qui concerne la rédaction de la datasheet, je n'ai pas trouvé de difficultés majeur car en tant qu'AE nous sommes habitués à lire et à analyser des datasheets. De plus nous avions accès à plusieurs exemples sur moodle pour nous permettre de suivre un plan cohérent.
+<br/> <br/>
+Quant au projet Microcontrôleur et matériel open source, je me suis sentie vraiment à l'aise sur ce sujet. La réalisation du schéma electronique sur KICAD et sur LT SPICE étaient des choses que l'on a déjà vu mais comme je n'ai pas eu l'occasion de faire du routage lors de mon stage de 4A, j'ai oublié quelques fonctions pour utiliser le logiciel KICAD. Grâce à ce cours, j'ai pu revoir certaines notions et certaines fonctionnalités du logiciel KICAD. 
+<br/><br/>Dans l'ensemble, je pense avoir acquis toutes les compétences pour ce module et même plus au vu du schéma electronique que l'on a pu réalisé à la fin de ce module qui implémentait des fonctions supplémentaires. 
+
+              </p>
+            </blockquote>
+          </Col>
+        </Row>
 
 
 

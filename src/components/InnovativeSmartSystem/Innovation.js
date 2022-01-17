@@ -87,8 +87,8 @@ function ProjetInnovant() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Pour mettre en oeuvre les concepts appris, nous avons élaboré un briefing pour notre projet innovant. Vous pouvez le trouver ici.
-              Nous avons également fais une présentation pour montrer et expliquer les notions d'évalutions des risques, nos méthodes de gestion par rapport à notre projet innovant.
-              Je n'avais aucune difficulté à appréhender cette matière, car j'ai déjà participé l'an dernier à un concours de jeune entrepreuner dans lequel j'ai dû faire un business plan très détaillé avec toutes les notions cités dans ce cours.
+                Nous avons également fais une présentation pour montrer et expliquer les notions d'évalutions des risques, nos méthodes de gestion par rapport à notre projet innovant.
+                Je n'avais aucune difficulté à appréhender cette matière, car j'ai déjà participé l'an dernier à un concours de jeune entrepreuner dans lequel j'ai dû faire un business plan très détaillé avec toutes les notions cités dans ce cours.
               </p>
 
             </blockquote>
@@ -121,7 +121,7 @@ function ProjetInnovant() {
               <br />
               <label>Développer la première étape de l'innovation  	</label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -135,7 +135,7 @@ function ProjetInnovant() {
               <br />
               <label> Appréhender les processus de production, de validation, de diffusion, d’acceptance (risque organisationnel et social), et de répercussion de l’innovation   </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -148,7 +148,7 @@ function ProjetInnovant() {
               <br />
               <label> Etablir un business plan (modalités de financement de l’innovation, marketing des produits innovants) 	   </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -227,6 +227,29 @@ function ProjetInnovant() {
           </Col>
 
         </Row>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            </a>
+
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Il est compliqué pour moi de devoir me noter sur ce module dans le sens où je n'ai pas fais encore toutes les matières car je suis en alternance. Mais je pense que grâce à mon expérience professionnelle, j'ai pu acquérir toutes ces notions de travail d'équipe. De plus, j'ai participé l'an dernier à un concours de jeune entrepreneur, où j'ai terminé finaliste et j'ai donc énormément appris pour convaincre des gens à adhérer à notre projet et à gérer un projet innovant.
+                Il est plus difficile de spécifier les compétences acquises dans les cours non techniques, et je pense qu'elles ne sont pas toutes présentes sur la matrice des compétences.
+ 
+              </p>
+            </blockquote>
+          </Col>
+        </Row>
+
 
 
       </Container>

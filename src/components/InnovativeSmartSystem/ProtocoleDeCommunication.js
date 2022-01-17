@@ -207,7 +207,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Connaitre les enjeux des nouvelles générations de communications mobiles 	</label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -221,7 +221,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Etre capable d'analyser et évaluer les technolgies réseaux sans fil optimales  </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -235,7 +235,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Etre capable de proposer de solutions de technologies réseaux optimales applicables à l'IoT 	  </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -277,7 +277,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Comprendre et maitriser la prise en compte de la contrainte securité dans l'optimisation de protocoles 	  </label>
               <ProgressBar
-                completed={80}
+                completed={60}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -291,7 +291,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Connaitre les principaux traitements utilisés dans une communication numérique et savoir expliquer la structure de base des émetteurs-récepteurs radiofréquences numériques   </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -303,7 +303,7 @@ function ProtocoleDeCommunication() {
 
               <label>Maîtriser l'architecture d'un système de gestion de l'énergie,  à stockage simple, à récupération d'énergie, savoir dimensionner l'élément de stockage en fonction du cahier des charges    </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -419,7 +419,7 @@ function ProtocoleDeCommunication() {
               <br />
               <label>Etre capable de proposer des contre-mesures de sécurité adaptées	</label>
               <ProgressBar
-                completed={80}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -433,6 +433,32 @@ function ProtocoleDeCommunication() {
 
 
         </Row>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            </a>
+
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+              Le module de Communication était vraiment dense, et touchait beaucoup de notions différentes. Grâce à ma formation d'AE, j'ai quelques notions et bases de réseaux qui m'ont été très utile pour bien comprendre ce module. Il y a eu bien sûr certaines matières où je suis moins à l'aise comme la sécurité dans les objets connectés mais le reste était convenable. 
+              <br />
+              <br />
+Concernant le cours de Protocoles de communication, j'ai pu découvir et apprendre quelques protocoles de communications de manière techniques. Je connaissais beaucoup de nom (BLE, WIFI, 5G, Sigfox) de manière général mais sans savoir leurs caractéristiques et leurs spécifités. Avec ce module, je pense avoir compris dans quel cas d'application un protocle est le mieux à utiliser. Ce module parlait abordait souvent les contraintes énergétiques dans le choix de protocole, c'est un sujet pour un AE qui est très important à prendre en compte.
+
+Le cours de sécurité sur l'IOT, était quelque chose de complètement inconnu pour moi. Les cours avec M. Alatta était intéressant et faisait une bonne introduction à ce domaine. Cependant, il est dommage que nous n'ayons pas eu assez de cas pratiques, car à l'état actuel, je ne me sens pas capable de mettre en place une sécurité pour un système. Il me faudrait plus de recherches et de temps pour savoir comment mettre en place un système de sécurité performant dans de l'embarqué. Mon sujet d'alternance porte sur le développement d'un robot qui se déplace à l'aide de plusieurs capteurs UWB, et la notion de sécurité est un élément important. Je pense donc que je vais beaucoup en apprendre beaucoup dessus et compléter mon apprentissage sur les notions de sécurité.
+                </p>
+                </blockquote>
+            </Col>
+            </Row>
+
 
       </Container>
     </Container >

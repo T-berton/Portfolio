@@ -24,14 +24,9 @@ function CapteurGazCard() {
             </h1>
             Concernant la partie hardware, nous avons décidé de faire un shield Arduino, dans lequel nous pourrions brancher un microcontrolleur (l'ESP32 dans notre cas), un récepteur LoRaWAN ,un capteur de gaz arduino (de marque groove) et notre capteur de gaz crée à l'AIME. 
             Notre équipe étant formé de trois élève ingénieur en embarqué, nous étions à l'aise dans la réalisation du circuit electronique et du PCB sous KICAD. Pour rajouter un peu d'automatique dans notre projet, nous avons décider d'implémenter une commande PID pour maintenir une température de 200°C (température pour laquelle le capteur à nano-particule est le plus fonctionnelle).
-            Nous avons également implémenté une interruption matérielle qui se déclenche lorsque le capteur de gaz détecte une valeur seuil (qui aura été préalablement choisit).
-            La partie software était divisé en quatre étapes : <br/> 
-            - Initialisation du récepteur LoRaWAN pour envoyer les données à une gateway, dans notre cas il s'agissait de "The Things Network"(TTN) <br/> 
-            - Récupération des données du capteur pour les stocker dans un tableau <br/> 
-            - Emission de ces données <br/> 
-            - Réception et traitement des données sur la gateway <br/> 
-            Enfin, nous avons également développer un code pour pouvoir gérer notre commande PID et la gestion de notre interruption matérielle qui déclenche une alarme signalant un danger dû à la présence de certain gazs de trop grande quantité dans la pièce où se situe le capteur.
-            
+            Nous avons également implémenté une interruption matérielle qui se déclenche lorsque le capteur de gaz détecte une valeur seuil (qui aura été préalablement choisit).<br/> <br/> 
+
+           
             </p>
 
         </blockquote>

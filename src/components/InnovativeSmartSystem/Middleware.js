@@ -215,8 +215,6 @@ function Middleware() {
                 <br /> <br />
                 <BsFillCaretRightFill className="blue" /> Enfin nous avons découvrir l'outil Node-Red qui permet de relier des dispositif matériel avec des services en lignes et des API, de façon visuelle. Node-red permet de faire des dashboard et donc d'afficher des résultats liés aux différents capteurs et objets connectés.
                 <br /> <br />
-                La principale difficulté a été de comprendre les spécificités de la norme OM2M. Il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de particier au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
-
 
               
               </p>
@@ -389,7 +387,7 @@ function Middleware() {
               <br />
               <label className="text-start">Comprendre la notion de cloud  </label>
               <ProgressBar
-                completed={100}
+                completed={80}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -404,7 +402,7 @@ function Middleware() {
               <br />
               <label className="text-center">Utiliser une infrastructure de cloud dans un mode Infrastructure As A Service 	 </label>
               <ProgressBar
-                completed={100}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -418,7 +416,7 @@ function Middleware() {
               <br />
               <label className="center">Déployer et adapter de manière autonomique une plate-forme pour l’Internet des Objets sur le cloud 	 	 </label>
               <ProgressBar
-                completed={100}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -458,6 +456,32 @@ function Middleware() {
             </div>
           </Col>
         </Row>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            </a>
+              
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+              Le module Middleware '&' Service était le plus orienté vers les compétences software. C'était un module dans lequel je n'avais aucune expérience que ce soit dans le developpement web service ou dans le même dans le cloud computing.
+              <br /> <br />
+Le cours sur l'architecture orientée services était tout nouveau pour moi. Je n'avais aucune expérience dans le développement de services Web en REST/SOAP. Mais je suis particulièrement interessé dans ce qui concerne le développement web, alors j'ai beaucoup apprécié les différents TD/TP. Je n'ai pas eu de grande difficultés même si c'était nouveau pour moi car les séances étaient bien guidés et expliqués.
+<br /> <br />
+Le cours sur l'Intergiciel pour l'Internet des objets était différent, dans la mesure où je ne connaissais rien de spécifique à ce sujet avant le cours. J'ai eu pas mal de difficultés à comprendre les spécificités de la norme OM2M surtout que j'ai loupé un TP de Middleware car je suis alternant. De plus comme il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de particier au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
+<br /> <br />
+Le cours de cloud computing, était je pense pour moi le cours le plus compliqué à comprendre du semestre. La première séance de TP était surtout théorique, mais avec des recherches internets j'ai pu bien comprendre les conceptes de virtualisation. Les dernières séance de TP m'ont permis de mieux comprendre l'utilité du cloud computing à travers des vrais cas pratiques, mais j'ai eu beaucoup de mal à le faire seul. Je pense qu'à la fin, les cinq sessions de Travaux Pratiques ont été suffisantes pour que j'assimile les principales compétences de ce cours.
+                </p>
+                </blockquote>
+            </Col>
+            </Row>
 
 
 

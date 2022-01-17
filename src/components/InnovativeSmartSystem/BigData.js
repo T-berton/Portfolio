@@ -117,7 +117,7 @@ function BigData() {
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Savoir explorer et représenter des ensembles de données   </label>
               <ProgressBar
-                completed={100}
+                completed={70}
                 labelColor="#ffffff"
                 labelAlignment="center"
                 bgColor="#2d1950"
@@ -125,25 +125,11 @@ function BigData() {
                 animateOnRender={true}
                 labelClassName="label"
               />
-              <br />
-              <br />
-              <label>Maitriser R 	</label>
-              <ProgressBar
-                completed={80}
-                // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
-                labelColor="#ffffff"
-                labelAlignment="center"
-                bgColor="#2d1950"
-                className="wrapper"
-                animateOnRender={true}
-                labelClassName="label"
-              />
-
               <br />
               <br />
               <label> Maitriser la complexité des traitements statistiques et connaitre les techniques de contournement   </label>
               <ProgressBar
-                completed={80}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -234,7 +220,7 @@ function BigData() {
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Concevoir et comprendre un modèle conceptuel pour un domaine d'application donné   </label>
               <ProgressBar
-                completed={100}
+                completed={70}
                 labelColor="#ffffff"
                 labelAlignment="center"
                 bgColor="#2d1950"
@@ -246,7 +232,7 @@ function BigData() {
               <br />
               <label>Savoir inférer de nouvelles connaissances à partir d'une base de connaissance (terminologie et assertions) 	</label>
               <ProgressBar
-                completed={80}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -260,7 +246,7 @@ function BigData() {
               <br />
               <label> Etre capable d'enrichir des données avec des méta-données sémantisées  </label>
               <ProgressBar
-                completed={80}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -273,6 +259,44 @@ function BigData() {
             </div>
           </Col>
 
+
+
+        </Row>
+
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            </a>
+
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Ce module comportait des cours très distincts impliquant différents ensembles de compétences. Ce module m'a fait découvrir le monde du Big Data et de l'analyse de données. Il est clair qu'il est important dans l'IOT de pouvoir gérer et analyser toutes ses données massives provenant dee capteurs, actionneurs ou autres systèmes...
+                <br /><br />
+                Le cours de Big Data était une première pour moi dans ce domaine. J'ai beaucoup apprécié l'étude de machine learning à travers plusieurs méthode de clustering. Le langage utilisé était le Python, nous avions déjà appris ce langage.
+                Ce cours reposait beaucoup sur des modèles mathématiques, et comme les algorithmes était déjà donné.
+                C'était tout de même une belle expéience et une belle découverte pour moi.
+                J'ai eu quelques difficultés au début à comprendre les mathématiques derrière chaque algorithme. Mais j'ai tout de même réussi dans l'ensemble à réaliser l'ensemble des expériences. Pour l'ensemble de compétences Traitement des données sémantiques, la plupart des exigences étaient déjà satisfaites dans la classe de l'année dernière ou avec la formation générale en RI. 
+                
+                <br /><br />
+
+                Le cours de Web Sémantique était une découverte pour moi. Je n'avais jamais entendu parlé de ce terme, et j'ai eu du mal à comprendre. Heureusement que les deux séances de TP m'ont permis de mieux appréhender ce domaine, et de mieux comprendre l'utilité du Web Semantique. J'ai trouvé que le premier TP était simple à prendre en main et à comprendre, mais le deuxième TP était très compliqué pour moi. D'autres élèves qui étaient plus à l'aise sur ce sujet notamment les élèves d'IR ont pu m'aider à finir ce dernier TP. Il aurait surement fallu que le deuxième TP soit plus guidé pour savoir par quoi commencer par exemple.
+                <br /><br />
+
+                Concernant l'ingénieur logicielle, je connaissais déjà la plupart des méthodes présentées et j'avais beaucoup d'expérience avec la méthode Agile, notamment lors de mon stage de 4A qui fonctionnait en méthode Agile. Donc je pense que grâce à mon expérience professionnelle et ma formation INSA , j'ai atteins toutes les exigences.
+                <br /><br />
+                Dans l'ensemble, j'ai compris l'essentielle des notions abordées pour le Web Semantique et le Big Data, mais je ne pense pas plus tard travailler dans ce secteur, ce fut tout de même une belle découverte.
+
+              </p>
+            </blockquote>
+          </Col>
         </Row>
 
 
