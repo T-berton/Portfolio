@@ -10,6 +10,17 @@ import { BsFillCaretRightFill } from "react-icons/bs";
 import ProgressBar from "@ramonak/react-progress-bar";
 import '../SkillsBar/style.css';
 import { CgEnter } from "react-icons/cg";
+import { BsCheckBox } from "react-icons/bs"
+import { AiFillFilePdf } from "react-icons/ai"
+import { Link } from "react-router-dom";
+
+import pdflogo from "../../Assets/logo-pdf.svg"
+import githublogo from "../../Assets/GitHub-Logo.png"
+import diapologo from "../../Assets/diapo_logo.jpg"
+
+import datasheet from "../../Assets/Annexe/Datasheet-AIME.pdf"
+
+import Image from 'react-bootstrap/Image'
 
 
 function SmartSystem() {
@@ -27,7 +38,7 @@ function SmartSystem() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Descriptif et Analyse - Smart System</strong>
+              <strong className="purple"> Partie Descriptif et Technique - Smart System</strong>
             </a>
             <br />
             <br />
@@ -81,7 +92,7 @@ function SmartSystem() {
               </p>
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
 
-                Après avoir conçu et developpé notre propre capteur de gaz, nous avons dû présenter ses différents caractéristiques à travers sa datasheet. Vous trouverez la datasheet de mon capteur <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
+                Après avoir conçu et developpé notre propre capteur de gaz, nous avons dû présenter ses différents caractéristiques à travers sa datasheet. Vous trouverez la datasheet de mon capteur.
 
               </p>
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
@@ -100,7 +111,7 @@ function SmartSystem() {
 
           <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Comprendre les notions de base des capteurs et des chaîne de mesure: aspects physique/électronique et métrologique </label>
@@ -172,7 +183,7 @@ function SmartSystem() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Un objet connecté est un système comprenent un ensemble (capteur, actionneur et Microcontrôleur), nous avons vu à travers cette matière comment les associer ensemble dans un cas pratique. Il était question de réaliser objet connecté et intelligent à partir du capteur de gaz fabriqué. Vous trouverez plus d'explications <a href={"/projetintegrateur"}> <strong className="purple"> ici.</strong> </a>
+                Un objet connecté est un système comprenent un ensemble (capteur, actionneur et Microcontrôleur), nous avons vu à travers cette matière comment les associer ensemble dans un cas pratique. Il était question de réaliser objet connecté et intelligent à partir du capteur de gaz fabriqué. Vous trouverez plus d'explications <a href={"/capteurgaz"}> <strong className="purple"> ici</strong></a>.
               </p>
 
             </blockquote>
@@ -203,7 +214,7 @@ function SmartSystem() {
 
           <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em" }}>
-              <strong textAlign="center"> Compétences acquises </strong>
+              <strong textAlign="center"> Mon évaluation </strong>
             </h>
 
             <br />
@@ -294,6 +305,75 @@ function SmartSystem() {
 
         </Row>
 
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <a style={{ fontSize: "2.1em", paddingBottom: "10px" }}>
+              <strong className="purple"> Analyse de l'Unité de Formation  </strong>
+            </a>
+          </Col>
+
+        </Row>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue">  Mon Feedback </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Le module "Smart Device" est le module sur lequel j'étais je pense le plus à l'aise techniquement. C'était l'un des cours les moins orientés vers les compétences logicielles, reposant davantage sur l'électronique, l'informatique embarqué et les connaissances en physique. Grâce ma formation d'AE, je n'ai pas eu de difficultés à appréhender toutes les compétences nécessaires. <br />
+                <br />
+                Pour le cours d'introduction aux capteurs, nous avions déjà fait une semaine à l'AIME lors de ma deuxième année en IMACS où l'on a réalise une cellule photovoltaïque. De plus mes connaissances en physique et chimie acquises lors des premières années à l'INSA m'ont permis de bien comprendre les notions pour la fabricaiton du capteur à nano-particule. En ce qui concerne la rédaction de la datasheet, je n'ai pas trouvé de difficultés majeur car en tant qu'AE nous sommes habitués à lire et à analyser des datasheets. De plus nous avions accès à plusieurs exemples sur moodle pour nous permettre de suivre un plan cohérent.
+                <br /> <br />
+                Quant au projet Microcontrôleur et matériel open source, je me suis sentie vraiment à l'aise sur ce sujet. La réalisation du schéma electronique sur KICAD et sur LT SPICE étaient des choses que l'on a déjà vu mais comme je n'ai pas eu l'occasion de faire du routage lors de mon stage de 4A, j'ai oublié quelques fonctions pour utiliser le logiciel KICAD. Grâce à ce cours, j'ai pu revoir certaines notions et certaines fonctionnalités du logiciel KICAD.
+                <br /><br />Dans l'ensemble, je pense avoir acquis toutes les compétences pour ce module et même plus au vu du schéma electronique que l'on a pu réalisé à la fin de ce module qui implémentait des fonctions supplémentaires.
+
+              </p>
+            </blockquote>
+          </Col>
+
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Résumé des nouvelles compétences acquises </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "justify", textAlign: "justify" }}>
+                <BsCheckBox /> Rédiger une datasheet  <br />
+                <BsCheckBox /> Concevoir un capteur à nano-particule en salle Blanche <br />
+                <BsCheckBox /> Etablir une communication avec le protocole LoraWan entre un capteur et une gateway <br />
+                <BsCheckBox /> Afficher les résultats d'un capteur sous forme de Dashboard à l'aide de NodeRed <br />
+                <BsCheckBox /> Concevoir un capteur à nano-particule en laboratoire <br />
+                <BsCheckBox /> Amélioration de mes compétences en programmation embarquée en C++ avec le framework Arduino sous VSCode <br />
+                <BsCheckBox /> Amélioration de mes compétences sous KICAD pour effectuer un routage <br />
+
+
+              </p>
+            </blockquote>
+
+          </Col>
+
+        </Row>
+
         <Row style={{ justifyContent: "center", padding: "20px" }}>
           <Col
             md={12}
@@ -303,23 +383,36 @@ function SmartSystem() {
               paddingBottom: "10px",
             }}
           >
-            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Mes rapports </strong>
+            </h>
+          </Col>
+          <Col
+            md={6}
+          >
+            <a href={datasheet} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
             </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Datasheet capteur à nanoparticules</strong>
+            </p>
 
-            <blockquote className="blockquote mb-0">
-              <p style={{ justifyContent: "left", textAlign: "justify" }}>
-              Le module "Smart Device" est le module sur lequel j'étais je pense le plus à l'aise techniquement. C'était l'un des cours les moins orientés vers les compétences logicielles, reposant davantage sur l'électronique, l'informatique embarqué et les connaissances en physique. Grâce ma formation d'AE, je n'ai pas eu de difficultés à appréhender toutes les compétences nécessaires. <br/>
-              <br/>
-Pour le cours d'introduction aux capteurs, nous avions déjà fait une semaine à l'AIME lors de ma deuxième année en IMACS où l'on a réalise une cellule photovoltaïque. De plus mes connaissances en physique et chimie acquises lors des premières années à l'INSA m'ont permis de bien comprendre les notions pour la fabricaiton du capteur à nano-particule. En ce qui concerne la rédaction de la datasheet, je n'ai pas trouvé de difficultés majeur car en tant qu'AE nous sommes habitués à lire et à analyser des datasheets. De plus nous avions accès à plusieurs exemples sur moodle pour nous permettre de suivre un plan cohérent.
-<br/> <br/>
-Quant au projet Microcontrôleur et matériel open source, je me suis sentie vraiment à l'aise sur ce sujet. La réalisation du schéma electronique sur KICAD et sur LT SPICE étaient des choses que l'on a déjà vu mais comme je n'ai pas eu l'occasion de faire du routage lors de mon stage de 4A, j'ai oublié quelques fonctions pour utiliser le logiciel KICAD. Grâce à ce cours, j'ai pu revoir certaines notions et certaines fonctionnalités du logiciel KICAD. 
-<br/><br/>Dans l'ensemble, je pense avoir acquis toutes les compétences pour ce module et même plus au vu du schéma electronique que l'on a pu réalisé à la fin de ce module qui implémentait des fonctions supplémentaires. 
 
-              </p>
-            </blockquote>
+          </Col>
+          <Col
+            md={6}
+          >
+
+            <a href="https://github.com/MOSH-Insa-Toulouse/2021-2022-BOUKEZZATA-BERTON-MESLOUH"><img width="64" alt="Octicons-mark-github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png" />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Github Projet Smart Device </strong>
+            </p>
+
           </Col>
         </Row>
+
+
 
 
 

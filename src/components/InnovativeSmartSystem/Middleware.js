@@ -5,11 +5,22 @@ import Card from "react-bootstrap/Card";
 
 import broker from "../../Assets/Matiere/Middleware_broker.PNG";
 import cloud from "../../Assets/Matiere/Middleware_cloud.PNG";
+import dashboard from "../../Assets/dashboard_soa.png"
 import om2m from "../../Assets/Matiere/Middleware_OM2M.png";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import ProgressBar from "@ramonak/react-progress-bar";
 
+import { BsCheckBox } from "react-icons/bs"
+import { AiFillFilePdf } from "react-icons/ai"
+import { Link } from "react-router-dom";
+import pdflogo from "../../Assets/logo-pdf.svg"
+import githublogo from "../../Assets/GitHub-Logo.png"
+import diapologo from "../../Assets/diapo_logo.jpg"
 
+import datasheet from "../../Assets/Annexe/Datasheet-AIME.pdf"
+
+import cloud_pdf from "../../Assets/Annexe/TP_Cloud_Boukezzata_Berton.pdf"
+import soa_pdf from "../../Assets/Annexe/TP_SOA.pdf"
 
 function Middleware() {
   return (
@@ -26,11 +37,11 @@ function Middleware() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong> Descriptif et Analyse - Middleware</strong>
+              <strong className="purple"> Partie Descriptif et Technique - Middleware</strong>
             </a>
             <br />
             <br />
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "justify" }}>
               Ce module regroupe toutes les matières qui sont liés à l'intergiciel, l'achitecture de service (REST, SOAP) et au cloud computing. L'architecture orientée services, le standard utilisée aujourd'hui pour développer des services Web. Nous avons également étudié la plateforme middleware OM2M, dont le but est d'assurer l'interopérabilité entre tous les types de capteurs et d'applications.
 
             </p>
@@ -119,7 +130,7 @@ function Middleware() {
             }}
           >
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
 
             <div className="mt-3" style={{ textAlign: "start" }}>
@@ -162,7 +173,7 @@ function Middleware() {
                 animateOnRender={true}
                 labelClassName="label"
               />
-              </div>
+            </div>
 
           </Col>
         </Row>
@@ -209,31 +220,32 @@ function Middleware() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-              <BsFillCaretRightFill className="blue" /> Pour mettre en oeuvre ces deux protocoles, nous avons réalisés plusieurs travaux pratiques. Premièrement, pour nous implémenter MQTT, nous avons mis en place un broker mosquitto. Nous avons crée un sujet de scénario pour lequel une lampe s'allume automatiquement dès qu'une certaine valeur de luminosité a été atteinte. Ainsi toutes les lampes connectés qui sont abonnés à ce "topic" respecteront ce scénario. Pour plus de détails vous retrouverez ici notre compte-rendu.
+                <BsFillCaretRightFill className="blue" /> Pour mettre en oeuvre ces deux protocoles, nous avons réalisés plusieurs travaux pratiques. Premièrement, pour nous implémenter MQTT, nous avons mis en place un broker mosquitto. Nous avons crée un sujet de scénario pour lequel une lampe s'allume automatiquement dès qu'une certaine valeur de luminosité a été atteinte. Ainsi toutes les lampes connectés qui sont abonnés à ce "topic" respecteront ce scénario. Pour plus de détails vous retrouverez ici notre compte-rendu.
                 <br /><br />
                 <BsFillCaretRightFill className="blue" /> Ensuite nous avons réaliser un TP sur la norme OM2M dont le but est de permettre la communication et de contrôler plusieurs capteurs et objets connectés entre eux. OM2M met en place une architecture de ressource qui peut contenir une liste de capteur, ainsi que leurs données/états. Avvec des requêtes REST, nous pouvons intéragir avec ces ressources.
                 <br /> <br />
                 <BsFillCaretRightFill className="blue" /> Enfin nous avons découvrir l'outil Node-Red qui permet de relier des dispositif matériel avec des services en lignes et des API, de façon visuelle. Node-red permet de faire des dashboard et donc d'afficher des résultats liés aux différents capteurs et objets connectés.
                 <br /> <br />
+      
 
-              
               </p>
 
 
             </blockquote>
           </Col>
+ 
           <Col
             md={12}
             style={{
               justifyContent: "center",
-              paddingTop: "10px",
+              paddingTop: "20px",
               paddingBottom: "10px",
             }}
           >
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
-            
+
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label className="text-start">Savoir positionner les standards principaux de l’Internet des Objets    </label>
               <ProgressBar
@@ -347,13 +359,13 @@ function Middleware() {
 
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-              <BsFillCaretRightFill className="blue" /> Pendant la première séance de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers. 
-              Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
-              <br/>
-              <br/>
-              <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux container en utilisant Docker. Nous avons fais plusieurs essaies de communications entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
-              <br/><br/>
-              <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau, mais le professeur a pu nous montrer comment faire et nous guider.
+                <BsFillCaretRightFill className="blue" /> Pendant la première séance de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers.
+                Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
+                <br />
+                <br />
+                <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux container en utilisant Docker. Nous avons fais plusieurs essaies de communications entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
+                <br /><br />
+                <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau, mais le professeur a pu nous montrer comment faire et nous guider.
 
               </p>
             </blockquote>
@@ -368,7 +380,7 @@ function Middleware() {
             }}
           >
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
 
             <div className="mt-3" style={{ textAlign: "start" }}>
@@ -466,22 +478,105 @@ function Middleware() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+              <strong className="purple"> Analyse de l'Unité de Formation  </strong>
             </a>
-              
+          </Col>
+
+        </Row>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue">  Mon Feedback </strong>
+            </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-              Le module Middleware '&' Service était le plus orienté vers les compétences software. C'était un module dans lequel je n'avais aucune expérience que ce soit dans le developpement web service ou dans le même dans le cloud computing.
-              <br /> <br />
-Le cours sur l'architecture orientée services était tout nouveau pour moi. Je n'avais aucune expérience dans le développement de services Web en REST/SOAP. Mais je suis particulièrement interessé dans ce qui concerne le développement web, alors j'ai beaucoup apprécié les différents TD/TP. Je n'ai pas eu de grande difficultés même si c'était nouveau pour moi car les séances étaient bien guidés et expliqués.
-<br /> <br />
-Le cours sur l'Intergiciel pour l'Internet des objets était différent, dans la mesure où je ne connaissais rien de spécifique à ce sujet avant le cours. J'ai eu pas mal de difficultés à comprendre les spécificités de la norme OM2M surtout que j'ai loupé un TP de Middleware car je suis alternant. De plus comme il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de particier au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
-<br /> <br />
-Le cours de cloud computing, était je pense pour moi le cours le plus compliqué à comprendre du semestre. La première séance de TP était surtout théorique, mais avec des recherches internets j'ai pu bien comprendre les conceptes de virtualisation. Les dernières séance de TP m'ont permis de mieux comprendre l'utilité du cloud computing à travers des vrais cas pratiques, mais j'ai eu beaucoup de mal à le faire seul. Je pense qu'à la fin, les cinq sessions de Travaux Pratiques ont été suffisantes pour que j'assimile les principales compétences de ce cours.
-                </p>
-                </blockquote>
+                Le module Middleware '&' Service était le plus orienté vers les compétences software. C'était un module dans lequel je n'avais aucune expérience que ce soit dans le developpement web service ou dans le même dans le cloud computing.
+                <br /> <br />
+                Le cours sur l'architecture orientée services était tout nouveau pour moi. Je n'avais aucune expérience dans le développement de services Web en REST/SOAP. Mais je suis particulièrement interessé dans ce qui concerne le développement web, alors j'ai beaucoup apprécié les différents TD/TP. Je n'ai pas eu de grande difficultés même si c'était nouveau pour moi car les séances étaient bien guidés et expliqués.
+                <br /> <br />
+                Le cours sur l'Intergiciel pour l'Internet des objets était différent, dans la mesure où je ne connaissais rien de spécifique à ce sujet avant le cours. J'ai eu pas mal de difficultés à comprendre les spécificités de la norme OM2M surtout que j'ai loupé un TP de Middleware car je suis alternant. De plus comme il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de particier au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
+                <br /> <br />
+                Le cours de cloud computing, était je pense pour moi le cours le plus compliqué à comprendre du semestre. La première séance de TP était surtout théorique, mais avec des recherches internets j'ai pu bien comprendre les conceptes de virtualisation. Les dernières séance de TP m'ont permis de mieux comprendre l'utilité du cloud computing à travers des vrais cas pratiques, mais j'ai eu beaucoup de mal à le faire seul. Je pense qu'à la fin, les cinq sessions de Travaux Pratiques ont été suffisantes pour que j'assimile les principales compétences de ce cours.
+              </p>
+            </blockquote>
+          </Col>
+
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Résumé des nouvelles compétences acquises </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "justify", textAlign: "justify" }}>
+                <BsCheckBox /> Les standards principaux du domaine de l'IOT  <br />
+                <BsCheckBox /> Déployer une plateforme IOT avec le standard oneM2M<br />
+                <BsCheckBox /> Les principes généraux d'une architecture orientée service  <br />
+                <BsCheckBox /> Déployer une architecture orientée services avec des services web, en utilisant REST/SOAP et un controlleur <br />
+                <BsCheckBox /> Amélioration de mes compétences en Java <br />
+                <BsCheckBox /> Les concepts de cloud computing à travers la virtualisation <br />
+                <BsCheckBox /> Création d'une topologie virtualisé à l'aide d'Openstack <br />
+                <BsCheckBox /> Les différents niveaux de services du cloud computing (IAAS, PAAS, SAAS)<br />
+                <BsCheckBox /> Amélioration de mes compétences pour travailler en équipes grâce aux différents projets <br />
+
+
+
+              </p>
+            </blockquote>
+
+          </Col>
+        </Row>
+
+
+
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Mes rapports </strong>
+            </h>
+          </Col>
+
+          <Col
+            md={6}
+          >
+            <a href={cloud_pdf} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport TP Cloud Computing</strong>
+            </p>
             </Col>
-            </Row>
+
+            <Col
+            md={6}
+          >
+            <a href={soa_pdf} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport TP SOA</strong>
+            </p>
+            </Col>
+    </Row>
 
 
 

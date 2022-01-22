@@ -5,6 +5,16 @@ import Card from "react-bootstrap/Card";
 import nbiot from "../../Assets/Matiere/Communication_NB-IoT.jpeg";
 import sdr from "../../Assets/Matiere/Communication_SDR.jpeg.png";
 import ProgressBar from "@ramonak/react-progress-bar";
+import pdflogo from "../../Assets/logo-pdf.svg"
+import githublogo from "../../Assets/GitHub-Logo.png"
+import diapologo from "../../Assets/diapo_logo.jpg"
+import { BsCheckBox } from "react-icons/bs"
+
+import wsn from "../../Assets/Annexe/WSN MAC PROTOCOL (1).pdf"
+import rapportnbiot from "../../Assets/Annexe/Rapport NB-IoT final.pdf"
+import diapo from "../../Assets/Annexe/NB_IoT_Diapo_v2.pdf"
+import sdr_rapport from "../../Assets/Annexe/Raport SDR BOUKEZZATA BERTON.pdf"
+
 
 
 
@@ -23,7 +33,7 @@ function ProtocoleDeCommunication() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Descriptif et Analyse - Communication</strong>
+              <strong className="purple"> Partie Descriptif et Technique - Communication</strong>
             </a>
             <br />
             <br />
@@ -176,6 +186,26 @@ function ProtocoleDeCommunication() {
               paddingBottom: "10px",
             }}
           >
+
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                <h1 style={{ fontSize: "1.4em" }}>
+                Energie pour les objets connectés                </h1>
+
+L'objectif de ce cours était de comprendre et découvrir les différents types et manière de récupération d'énergie ainsi que les différents type de stockage (batterie, supercondensateur).  
+              </p>
+            </blockquote>
+
+          </Col>
+
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
             <h style={{ fontSize: "1.4em" }}>
               <strong className="blue">  Problèmes rencontrés </strong>
             </h>
@@ -190,7 +220,7 @@ function ProtocoleDeCommunication() {
 
           <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation  </strong>
             </h>
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Comprendre les étapes majeurs de développement des communications mobiles et les développements technologiques associés  </label>
@@ -374,7 +404,7 @@ function ProtocoleDeCommunication() {
 
           <Col md={12} style={{ paddingBot: 50 }}>
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Comprendre les notions de base de la sécurité 	 </label>
@@ -433,6 +463,74 @@ function ProtocoleDeCommunication() {
 
 
         </Row>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+            }}
+          >
+            <a style={{ fontSize: "2.1em"}}>
+              <strong className="purple"> Analyse de l'Unité de formation  </strong>
+            </a>
+          </Col>
+        </Row>
+
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue">  Mon Feedback </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "left", textAlign: "justify" }}>
+                Le module de Communication était vraiment dense, et touchait beaucoup de notions différentes. Grâce à ma formation d'AE, j'ai quelques notions et bases de réseaux qui m'ont été très utile pour bien comprendre ce module. Il y a eu bien sûr certaines matières où je suis moins à l'aise comme la sécurité dans les objets connectés mais le reste était convenable.
+                <br />
+                <br />
+                Concernant le cours de Protocoles de communication, j'ai pu découvir et apprendre quelques protocoles de communications de manière techniques. Je connaissais beaucoup de nom (BLE, WIFI, 5G, Sigfox) de manière général mais sans savoir leurs caractéristiques et leurs spécifités. Avec ce module, je pense avoir compris dans quel cas d'application un protocle est le mieux à utiliser. Ce module parlait abordait souvent les contraintes énergétiques dans le choix de protocole, c'est un sujet pour un AE qui est très important à prendre en compte.
+
+                Le cours de sécurité sur l'IOT, était quelque chose de complètement inconnu pour moi. Les cours avec M. Alatta était intéressant et faisait une bonne introduction à ce domaine. Cependant, il est dommage que nous n'ayons pas eu assez de cas pratiques, car à l'état actuel, je ne me sens pas capable de mettre en place une sécurité pour un système. Il me faudrait plus de recherches et de temps pour savoir comment mettre en place un système de sécurité performant dans de l'embarqué. Mon sujet d'alternance porte sur le développement d'un robot qui se déplace à l'aide de plusieurs capteurs UWB, et la notion de sécurité est un élément important. Je pense donc que je vais beaucoup en apprendre beaucoup dessus et compléter mon apprentissage sur les notions de sécurité.
+              </p>
+            </blockquote>
+          </Col>
+
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Résumé des nouvelles compétences acquises </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "justify", textAlign: "justify" }}>
+                <BsCheckBox /> Comprendre les différents types de protocole de communications dans l'IOT, leurs caractéristiques et l'aspect énergétique<br />
+                <BsCheckBox /> Aperçu et comparaison des protocoles de communication
+<br />
+                <BsCheckBox /> Être capable de suggérer des protocoles adaptés aux réseaux IoT en fonction du cas d'application  <br />
+                <BsCheckBox /> Connaitre et comprendre les concepts de la Radio Logicielle <br />
+                <BsCheckBox /> Connaitre et comprendre les concepts de routeurs SDN <br />
+                <BsCheckBox /> Manipulation d'un routeur SDN pour écrire des règles de routage en Python <br />
+                <BsCheckBox /> Connaitre et comprendre les différents types de récupération d'énergie sans fil <br />
+
+
+
+              </p>
+            </blockquote>
+
+          </Col>
+        </Row>
+
+
+
         <Row style={{ justifyContent: "center", padding: "20px" }}>
           <Col
             md={12}
@@ -442,22 +540,54 @@ function ProtocoleDeCommunication() {
               paddingBottom: "10px",
             }}
           >
-            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Mes rapports </strong>
+            </h>
+          </Col>
+
+          <Col
+            md={3}
+          >
+            <a href={wsn} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
             </a>
-
-            <blockquote className="blockquote mb-0">
-              <p style={{ justifyContent: "left", textAlign: "justify" }}>
-              Le module de Communication était vraiment dense, et touchait beaucoup de notions différentes. Grâce à ma formation d'AE, j'ai quelques notions et bases de réseaux qui m'ont été très utile pour bien comprendre ce module. Il y a eu bien sûr certaines matières où je suis moins à l'aise comme la sécurité dans les objets connectés mais le reste était convenable. 
-              <br />
-              <br />
-Concernant le cours de Protocoles de communication, j'ai pu découvir et apprendre quelques protocoles de communications de manière techniques. Je connaissais beaucoup de nom (BLE, WIFI, 5G, Sigfox) de manière général mais sans savoir leurs caractéristiques et leurs spécifités. Avec ce module, je pense avoir compris dans quel cas d'application un protocle est le mieux à utiliser. Ce module parlait abordait souvent les contraintes énergétiques dans le choix de protocole, c'est un sujet pour un AE qui est très important à prendre en compte.
-
-Le cours de sécurité sur l'IOT, était quelque chose de complètement inconnu pour moi. Les cours avec M. Alatta était intéressant et faisait une bonne introduction à ce domaine. Cependant, il est dommage que nous n'ayons pas eu assez de cas pratiques, car à l'état actuel, je ne me sens pas capable de mettre en place une sécurité pour un système. Il me faudrait plus de recherches et de temps pour savoir comment mettre en place un système de sécurité performant dans de l'embarqué. Mon sujet d'alternance porte sur le développement d'un robot qui se déplace à l'aide de plusieurs capteurs UWB, et la notion de sécurité est un élément important. Je pense donc que je vais beaucoup en apprendre beaucoup dessus et compléter mon apprentissage sur les notions de sécurité.
-                </p>
-                </blockquote>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport sur les protocoles MAC des réseaux de capteurs sans fil</strong>
+            </p>
             </Col>
-            </Row>
+
+            <Col
+            md={3}
+          >
+            <a href={nbiot} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport sur le protocole NB-IOT</strong>
+            </p>
+            </Col>
+            <Col
+            md={3}
+          >
+            <a href={diapo} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Diaporama sur le protocole NB-IOT</strong>
+            </p>
+            </Col>
+            <Col
+            md={3}
+          >
+            <a href={sdr_rapport} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport sur le TP de Radio Logicielle</strong>
+            </p>
+            </Col>
+    </Row>
+
 
 
       </Container>

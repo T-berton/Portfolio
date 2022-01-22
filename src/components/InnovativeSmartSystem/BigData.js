@@ -6,6 +6,14 @@ import Card from "react-bootstrap/Card";
 import clustering from "../../Assets/Matiere/Big_Data_clustering.PNG";
 import ProgressBar from "@ramonak/react-progress-bar";
 
+import { BsCheckBox } from "react-icons/bs"
+import pdflogo from "../../Assets/logo-pdf.svg"
+import githublogo from "../../Assets/GitHub-Logo.png"
+import diapologo from "../../Assets/diapo_logo.jpg"
+
+import data_rapport from "../../Assets/Annexe/TP_DATA (1).pdf"
+import sem_rapport from "../../Assets/Annexe/TP_WebSemantique.pdf"
+
 
 
 
@@ -24,7 +32,7 @@ function BigData() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Descriptif et Analyse - Gestion des données </strong>
+              <strong className="purple">  Partie Descriptif et Technique - Gestion des données </strong>
             </a>
             <br />
             <br />
@@ -111,7 +119,7 @@ function BigData() {
             }}
           >
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
 
             <div className="mt-3" style={{ textAlign: "start" }}>
@@ -196,7 +204,7 @@ function BigData() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
 
-                Pour mieux appréhender les différents concepts d'ontologies et de web semantiques, nous avons réalisés deux travaux pratiques. Le premier était de créer une ontologie sur les phénomènes météorologiques avec le logiciel "Protégé".
+                Pour mieux appréhender les différents concepts d'ontologies et de web semantiques, nous avons réalisés deux travaux pratiques. Le premier était de créer une ontologie sur les phénomènes météorologiques avec le logiciel "Protégé". Le deuxième TP a pour but de se servir de l'ontologie créée précédemment en interagissant avec un jeu de données. Nous devions créer des méthodes en JAVA pour récupérer des données issues d'un dataset.
 
               </p>
 
@@ -214,7 +222,7 @@ function BigData() {
             }}
           >
             <h style={{ fontSize: "1.4em", paddingBottom: "0px" }}>
-              <strong className="blue"> Compétences acquises </strong>
+              <strong className="blue"> Mon évaluation </strong>
             </h>
 
             <div className="mt-3" style={{ textAlign: "start" }}>
@@ -273,9 +281,23 @@ function BigData() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+              <strong className="purple"> Analyse de l'Unité de Formation  </strong>
             </a>
+          </Col>
 
+        </Row>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue">  Mon Feedback </strong>
+            </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Ce module comportait des cours très distincts impliquant différents ensembles de compétences. Ce module m'a fait découvrir le monde du Big Data et de l'analyse de données. Il est clair qu'il est important dans l'IOT de pouvoir gérer et analyser toutes ses données massives provenant dee capteurs, actionneurs ou autres systèmes...
@@ -283,8 +305,8 @@ function BigData() {
                 Le cours de Big Data était une première pour moi dans ce domaine. J'ai beaucoup apprécié l'étude de machine learning à travers plusieurs méthode de clustering. Le langage utilisé était le Python, nous avions déjà appris ce langage.
                 Ce cours reposait beaucoup sur des modèles mathématiques, et comme les algorithmes était déjà donné.
                 C'était tout de même une belle expéience et une belle découverte pour moi.
-                J'ai eu quelques difficultés au début à comprendre les mathématiques derrière chaque algorithme. Mais j'ai tout de même réussi dans l'ensemble à réaliser l'ensemble des expériences. Pour l'ensemble de compétences Traitement des données sémantiques, la plupart des exigences étaient déjà satisfaites dans la classe de l'année dernière ou avec la formation générale en RI. 
-                
+                J'ai eu quelques difficultés au début à comprendre les mathématiques derrière chaque algorithme. Mais j'ai tout de même réussi dans l'ensemble à réaliser l'ensemble des expériences.
+
                 <br /><br />
 
                 Le cours de Web Sémantique était une découverte pour moi. Je n'avais jamais entendu parlé de ce terme, et j'ai eu du mal à comprendre. Heureusement que les deux séances de TP m'ont permis de mieux appréhender ce domaine, et de mieux comprendre l'utilité du Web Semantique. J'ai trouvé que le premier TP était simple à prendre en main et à comprendre, mais le deuxième TP était très compliqué pour moi. D'autres élèves qui étaient plus à l'aise sur ce sujet notamment les élèves d'IR ont pu m'aider à finir ce dernier TP. Il aurait surement fallu que le deuxième TP soit plus guidé pour savoir par quoi commencer par exemple.
@@ -297,8 +319,81 @@ function BigData() {
               </p>
             </blockquote>
           </Col>
+
+
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Résumé des nouvelles compétences acquises </strong>
+            </h>
+            <blockquote className="blockquote mb-0">
+              <p style={{ justifyContent: "justify", textAlign: "justify" }}>
+              <BsCheckBox /> Comprendre le concept général du big data <br />
+
+                <BsCheckBox /> Comprendre le concept de clustering  <br />
+                <BsCheckBox /> Connaitre et comprendre différents algorithmes de clustering (KMEANS, DBSCAN, Agglomeratif)  <br />
+                <BsCheckBox /> Amélioration de mes compétences en Python <br />
+                <BsCheckBox /> Comprendre le concept de web sémantique <br />
+         
+
+                <BsCheckBox /> Savoir utiliser le logiciel Protégé pour créer une Ontologie <br />
+                <BsCheckBox /> Savoir exploiter une ontologie <br />
+                <BsCheckBox /> Amélioration de mes compétences en Java <br />
+           
+
+
+
+              </p>
+            </blockquote>
+
+          </Col>
+
         </Row>
 
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Mes rapports </strong>
+            </h>
+          </Col>
+          <Col
+            md={6}
+          >
+             <a href={data_rapport} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport TP de BIG DATA</strong>
+            </p>
+
+          </Col>
+          <Col
+            md={6}
+          >
+             <a href={sem_rapport} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport TP de Web Sémantique</strong>
+            </p>
+
+          </Col>
+
+
+        </Row>
 
 
       </Container>

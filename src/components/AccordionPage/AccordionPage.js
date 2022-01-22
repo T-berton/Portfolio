@@ -9,6 +9,7 @@ import Middleware_Services from "../../Assets/Middleware_Services.jpg";
 import Communication from "../../Assets/connection.jpg";
 import Big_data from "../../Assets/Big_data.jpg";
 import Innovative_project from "../../Assets/Innovative_project.webp";
+import Innovation from "../../Assets/Innovation.jpg"
 import Particle from "../Particle";
 
 import Button from "react-bootstrap/Button";
@@ -94,13 +95,30 @@ function AccordionPage() {
         </Panel>
         <Panel
           itemId="4"
-          background={Innovative_project}
+          background={Innovation}
         >
           <Particle/>
                <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
         <a className="purple"> Innovation et Humanité </a>
             </h1>  
             <Link to="/Innovation">
+          <Button variant="primary">
+          <a>En savoir plus...</a>
+          </Button>
+        </Link>
+  
+
+        </Panel>
+
+        <Panel
+          itemId="5"
+          background={Innovative_project}
+        >
+          <Particle/>
+               <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
+        <a className="purple"> Projet Intégrateur </a>
+            </h1>  
+            <Link to="/Projet">
           <Button variant="primary">
           <a>En savoir plus...</a>
           </Button>

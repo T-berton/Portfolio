@@ -6,7 +6,8 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import triz from "../../Assets/Matiere/Triz.PNG"
 
-
+import pdflogo from "../../Assets/logo-pdf.svg"
+import rapport_triz from "../../Assets/Annexe/Méthode_TRIZ_BERTON_BOUKEZZATA.pdf"
 
 function ProjetInnovant() {
   return (
@@ -237,19 +238,44 @@ function ProjetInnovant() {
             }}
           >
             <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple"> Retrospection de l'Unité de formation  </strong>
+              <strong className="purple"> Analyse de l'Unité de formation  </strong>
             </a>
 
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Il est compliqué pour moi de devoir me noter sur ce module dans le sens où je n'ai pas fais encore toutes les matières car je suis en alternance. Mais je pense que grâce à mon expérience professionnelle, j'ai pu acquérir toutes ces notions de travail d'équipe. De plus, j'ai participé l'an dernier à un concours de jeune entrepreneur, où j'ai terminé finaliste et j'ai donc énormément appris pour convaincre des gens à adhérer à notre projet et à gérer un projet innovant.
-                Il est plus difficile de spécifier les compétences acquises dans les cours non techniques, et je pense qu'elles ne sont pas toutes présentes sur la matrice des compétences.
+                Il est compliqué pour moi de devoir me noter sur ce module dans le sens où je n'ai pas fais encore toutes les matières car je suis en alternance. Mais je pense que grâce à mon expérience professionnelle, j'ai pu acquérir toutes ces notions de travail d'équipe. De plus, j'ai participé l'an dernier à un concours de jeune entrepreneur (CRECE), où j'ai terminé finaliste et j'ai donc énormément appris pour convaincre des gens à adhérer à notre projet et à gérer un projet innovant.
+            
  
               </p>
             </blockquote>
           </Col>
         </Row>
+        <Row style={{ justifyContent: "center", padding: "20px" }}>
+          <Col
+            md={12}
+            style={{
+              justifyContent: "center",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
+          >
+            <h style={{ fontSize: "1.4em" }}>
+              <strong className="blue"> Mes rapports </strong>
+            </h>
+          </Col>
+          <Col
+            md={12}
+          >
+            <a href={rapport_triz} target="Blank_">
+              <img src={pdflogo} style={{ height: 64, width: 64 }} />
+            </a>
+            <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">
+              <strong>Rapport sur la Méthode Triz pour la gourde</strong>
+            </p>
 
+
+          </Col>
+          </Row>
 
 
       </Container>
