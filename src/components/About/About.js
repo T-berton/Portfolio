@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/undraw_product.svg";
 import logo_iss from "../../Assets/ISS_Logo.png";
 import Toolstack from "./Toolstack";
 import AboutMS from "./AboutMS";
@@ -74,7 +74,6 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
       </Container>
     </Container>
   );

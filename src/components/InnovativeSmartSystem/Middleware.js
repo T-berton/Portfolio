@@ -42,7 +42,7 @@ function Middleware() {
             <br />
             <br />
             <p style={{ textAlign: "justify" }}>
-              Ce module regroupe toutes les matières qui sont liés à l'intergiciel, l'achitecture de service (REST, SOAP) et au cloud computing. L'architecture orientée services, le standard utilisée aujourd'hui pour développer des services Web. Nous avons également étudié la plateforme middleware OM2M, dont le but est d'assurer l'interopérabilité entre tous les types de capteurs et d'applications.
+              Ce module regroupe toutes les matières qui sont liés à l'intergiciel, l'achitecture de service (REST, SOAP) et au cloud computing. L'architecture orientée services est le standard utilisée aujourd'hui pour développer des services Web. Nous avons également étudié la plateforme middleware OneM2M, dont le but est d'assurer l'interopérabilité entre tous les types de capteurs et d'applications.
 
             </p>
           </Col>
@@ -88,7 +88,7 @@ function Middleware() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Cette matière nous a inités à l'utilisation des Architecture orientés service de type REST et SOAP. L'idée principale du cours était de nous montrer comment créer et déployer des services Web à travers plusieurs API.
-                Pour mettre en pratiques les connaissances apprises durant les cours théoriques, nous avons réalisé un projet dans lequel nous devions, par groupe de 3, réaliser une application de domotique simulant une salle de classe connectée pour appliquer les leçons d'architecture orientée service et de middleware. L'objectif était de réaliser une application Web pour gérer plusieurs pièces d'un établissement, comme ouvrir la porte, allumer/éteindre la lumière en fonction de l'état d'un ensemble de capteurs et déclencher certains actionneurs. Nous devions créer plusieurs scénarios comme par exemple "ouvrir les volets d'une pièce si la luminosité est inférieur à une certaine valeur seuil".
+                Pour mettre en pratiques les connaissances apprises durant les cours théoriques, nous avons réalisé un projet dans lequel nous devions, par groupe de 3, réaliser une application de domotique simulant une salle de classe connectée pour appliquer les cours d'architecture orientée service et de middleware. L'objectif était de réaliser une application Web pour gérer plusieurs pièces d'un établissement, comme ouvrir la porte, allumer/éteindre la lumière en fonction de l'état d'un ensemble de capteurs et déclencher certains actionneurs. Nous devions créer plusieurs scénarios comme par exemple "ouvrir les volets d'une pièce si la luminosité est inférieur à une certaine valeur seuil".
 
 
               </p>
@@ -111,7 +111,7 @@ function Middleware() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
 
-                Pour réaliser ce projet, nous avons crée une architecture de classe où chaque type d'actionneur/capteur était un SpringBoot Java projet. framework qui a été abordé lors des deux derniers tutoriels, à peu près au moment où nous avons commencé le projet SOA. SpringBoot permet de créer des services Web simples et de les déployer très facilement. Je n'ai donc pas eu de difficultés particulières à créer mon architecture via SpringBoot, car tout était automatiser.
+                Pour réaliser ce projet, nous avons crée une architecture de classe où chaque type d'actionneur/capteur était un SpringBoot Java projet. C'est un framework qui a été abordé lors des deux derniers tutoriels, à peu près au moment où nous avons commencé le projet SOA. SpringBoot permet de créer des services Web simples et de les déployer très facilement. Je n'ai donc pas eu de difficultés particulières à créer mon architecture via SpringBoot, car tout était automatisé.
                 <br /><br />Comme nous ne pouvions pas utiliser de capteurs ou d'actionneurs réels, nous avons fais intervenir OM2M pour qu'il puisse simuler des capteurs, en créant des entités d'application. Puis nous avons crée un controlleur qui va gérer et faire intéragir ses micro-services à travers des requêtes GET et POST.
 
                 <br /><br />Ce projet devait également prendre en compte l'aspect gestion de projet. Nous avons donc utilisé des outils de la méthode SCRUM avec l'outil JIRA (méthode agile classique) et l'outil Jenkins.
@@ -360,10 +360,10 @@ function Middleware() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 <BsFillCaretRightFill className="blue" /> Pendant la première séance de travaux pratiques nous avons commencé par de la théorie. Nous avons comparé les deux principales techniques de virtualisatoin à savoir les machines virtuelles et les containers.
-                Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordés.
+                Je n'avais aucune connaissance dans le domaine du cloud, alors j'ai eu beaucoup de mal à comprendre ce premier TP. Le professeur et les élèves qui étaient à l'aise sur ce sujet m'ont permis de mieux comprendre les notions abordées.
                 <br />
                 <br />
-                <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux container en utilisant Docker. Nous avons fais plusieurs essaies de communications entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
+                <BsFillCaretRightFill className="blue" /> Ensuite nous avons utilisé VirtualBox, pour créer des machines virtuelles sur Linux. Sur ces machines virtuelles, nous avons lancés deux containers en utilisant Docker. Nous avons fais plusieurs essaies de communication entre les VM et les containers puis nous avons utilisés les principales opérations des containers comme la création de "snapshot". J'ai trouvé que ce TP était beaucoup moins compliqué à comprendre, même avec aucune experience dans ce domaine, j'ai pu bien comprendre les différentes notions car le TP était très bien guidé. Ainsi, nous avons pu voir que vraiment les containers sont utiles pour déployer des applications à grande échelle qui fonctionnent sur plusieurs serveurs qui ont besoin du même système d'exploitation et de même configuration.
                 <br /><br />
                 <BsFillCaretRightFill className="blue" /> Enfin dans les derniers TP, nous avons découvert et utilisé OpenStack. Il s'agit d'un service de machines virtuelles qui fournit des machines virtuelles qui fonctionnent directement sur les machines du serveur et qui est gérer par le biais d'une interface Web. Openstack permet également la virtualisation du réseau, c'est ce que nous avons expérimenté durant ces derniers TP. Pour le coup j'ai trouvé cette partie la plus compliqué. J'ai eu beaucoup de mal à gérer les différentes topologies du réseau, mais le professeur a pu nous montrer comment faire et nous guider.
 
@@ -414,7 +414,7 @@ function Middleware() {
               <br />
               <label className="text-center">Utiliser une infrastructure de cloud dans un mode Infrastructure As A Service 	 </label>
               <ProgressBar
-                completed={70}
+                completed={80}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -428,7 +428,7 @@ function Middleware() {
               <br />
               <label className="center">Déployer et adapter de manière autonomique une plate-forme pour l’Internet des Objets sur le cloud 	 	 </label>
               <ProgressBar
-                completed={70}
+                completed={80}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -442,7 +442,7 @@ function Middleware() {
               <br />
               <label className="text-center">Déployer une architecture PaaS basée sur OM2M 		 </label>
               <ProgressBar
-                completed={100}
+                completed={90}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -456,7 +456,7 @@ function Middleware() {
               <br />
               <label className="text-center">Rendre autonomique une architecture PaaS 		 </label>
               <ProgressBar
-                completed={100}
+                completed={90}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -501,7 +501,7 @@ function Middleware() {
                 <br /> <br />
                 Le cours sur l'architecture orientée services était tout nouveau pour moi. Je n'avais aucune expérience dans le développement de services Web en REST/SOAP. Mais je suis particulièrement interessé dans ce qui concerne le développement web, alors j'ai beaucoup apprécié les différents TD/TP. Je n'ai pas eu de grande difficultés même si c'était nouveau pour moi car les séances étaient bien guidés et expliqués.
                 <br /> <br />
-                Le cours sur l'Intergiciel pour l'Internet des objets était différent, dans la mesure où je ne connaissais rien de spécifique à ce sujet avant le cours. J'ai eu pas mal de difficultés à comprendre les spécificités de la norme OM2M surtout que j'ai loupé un TP de Middleware car je suis alternant. De plus comme il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de particier au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
+                Le cours sur l'Intergiciel pour l'Internet des objets était différent, dans la mesure où je ne connaissais rien de spécifique à ce sujet avant le cours. J'ai eu pas mal de difficultés à comprendre les spécificités de la norme OM2M surtout que j'ai loupé un TP de Middleware car je suis alternant. De plus comme il n'y a pas encore beaucoup de tutoriel sur des cas concrets, il était donc compliqué de bien comprendre le fonctionnement et les possibilités de l'OM2M. Heureusement, les différents TP nous ont permis d'aborder plusieurs notions différentes de OM2M. De plus, cette année nous avons eu l'opportunité de participer au Hackhathon dont le but principal était d'intégrer le standard oneM2M pour un système connecté, ce qui m'a permis d'encore mieux comprendre et de manipuler encore plus OM2M.
                 <br /> <br />
                 Le cours de cloud computing, était je pense pour moi le cours le plus compliqué à comprendre du semestre. La première séance de TP était surtout théorique, mais avec des recherches internets j'ai pu bien comprendre les conceptes de virtualisation. Les dernières séance de TP m'ont permis de mieux comprendre l'utilité du cloud computing à travers des vrais cas pratiques, mais j'ai eu beaucoup de mal à le faire seul. Je pense qu'à la fin, les cinq sessions de Travaux Pratiques ont été suffisantes pour que j'assimile les principales compétences de ce cours.
               </p>
@@ -530,6 +530,8 @@ function Middleware() {
                 <BsCheckBox /> Création d'une topologie virtualisé à l'aide d'Openstack <br />
                 <BsCheckBox /> Les différents niveaux de services du cloud computing (IAAS, PAAS, SAAS)<br />
                 <BsCheckBox /> Amélioration de mes compétences pour travailler en équipes grâce aux différents projets <br />
+                <BsCheckBox /> Savoir se servir des outils de la méthode agile (JIRA, Jenkins) <br />
+
 
 
 

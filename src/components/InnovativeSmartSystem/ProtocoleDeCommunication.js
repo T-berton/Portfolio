@@ -14,7 +14,7 @@ import wsn from "../../Assets/Annexe/WSN MAC PROTOCOL (1).pdf"
 import rapportnbiot from "../../Assets/Annexe/Rapport NB-IoT final.pdf"
 import diapo from "../../Assets/Annexe/NB_IoT_Diapo_v2.pdf"
 import sdr_rapport from "../../Assets/Annexe/Raport SDR BOUKEZZATA BERTON.pdf"
-
+import nrj from "../../Assets/energie.jpg"
 
 
 
@@ -38,7 +38,7 @@ function ProtocoleDeCommunication() {
             <br />
             <br />
             <p style={{ textAlign: "justify" }}>
-              Ce module regroupe beaucoup de sujets différents, ayant en commun le domaine de l'Internet des objets. Les problématiques liés à l'IOT comme la communication sans fil, l'énergétie des objets connectés et la sécurité sont des points abordés. On y retrouve également toute les notions liés aux différents protocoles de communication sans fils (Zigbee, BLE, WIFI, 5G...).
+              Ce module regroupe beaucoup de sujets différents, ayant en commun le domaine de l'Internet des objets. Les problématiques liés à l'IOT comme la communication sans fil, l'énergie des objets connectés et la sécurité sont des points abordés. On y retrouve également toutes les notions liées aux différents protocoles de communication sans fils (Zigbee, BLE, WIFI, 5G...).
 
 
             </p>
@@ -119,7 +119,7 @@ function ProtocoleDeCommunication() {
                 <h1 style={{ fontSize: "1.4em" }}>
                   Radio Logicielle (Software Defined Radio) :
                 </h1>
-                A travers plusieurs cours théoriques et plusieurs TP, nous avons travaillé les bases de la radio logicielle (SDR). L'intérêt de la Radio Logicielle est de remplacer l'utilisation de composants matériels certaines opérations pour recevoir un signal FM comme le décalage de fréquence ou la démodulation par exemple. Dans la SDR, toutes ces tâches sont effectuées par un seul appareil, et toute la partie décodage du signal se fait par logiciel.
+                A travers plusieurs cours théoriques et plusieurs TP, nous avons travaillé les bases de la radio logicielle (SDR). L'intérêt de la Radio Logicielle est de remplacer l'utilisation de composants matériels qui effectue certaines opérations pour recevoir un signal FM comme le décalage de fréquence ou la démodulation par exemple. Dans la SDR, toutes ces tâches sont effectuées par un seul appareil, et toute la partie décodage du signal se fait par logiciel.
               </p>
             </blockquote>
 
@@ -179,7 +179,7 @@ function ProtocoleDeCommunication() {
           </Col>
 
           <Col
-            md={12}
+            md={9}
             style={{
               justifyContent: "center",
               paddingTop: "10px",
@@ -192,10 +192,15 @@ function ProtocoleDeCommunication() {
                 <h1 style={{ fontSize: "1.4em" }}>
                 Energie pour les objets connectés                </h1>
 
-L'objectif de ce cours était de comprendre et découvrir les différents types et manière de récupération d'énergie ainsi que les différents type de stockage (batterie, supercondensateur).  
+L'objectif de ce cours était de comprendre et découvrir les différents types et manière de récupération d'énergie ainsi que les différents type de stockage (batterie, supercondensateur). Nous avons fais un TP sur la récupération d'énergie sans fil notamment par transmission d'onde, où nous avons pu voir que ce type de récupération présente de nombreuses avantage en terme de portée mais est encore immature en terme de technologie, on ne sait pas son impact sur la santé.
+<br/><br/>Nous avons eu également l'opportunité de pouvoir réaliser en salle blanche un supercondensateur.
               </p>
             </blockquote>
 
+          </Col>
+
+          <Col md={3} style={{ paddingTop: 80 }}>
+            <img src={nrj} className="img-fluid rounded" />
           </Col>
 
           <Col
@@ -279,7 +284,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
               <br />
               <label>Comprendre et maitriser la prise en compte de la contrainte energetique dans l'optimisation de protocoles de communication pour IoT 	 </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -293,7 +298,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
               <br />
               <label>Etre capable d'analyser et évaluer les technolgies réseaux sans fil optimales  </label>
               <ProgressBar
-                completed={80}
+                completed={100}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -307,7 +312,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
               <br />
               <label>Comprendre et maitriser la prise en compte de la contrainte securité dans l'optimisation de protocoles 	  </label>
               <ProgressBar
-                completed={60}
+                completed={70}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -321,7 +326,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
               <br />
               <label>Connaitre les principaux traitements utilisés dans une communication numérique et savoir expliquer la structure de base des émetteurs-récepteurs radiofréquences numériques   </label>
               <ProgressBar
-                completed={100}
+                completed={80}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -397,7 +402,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Les cours étaient très complets sur la sécurité dans l'IOT. Cependant, nous n'avons pas pratiqué et par conséquent je ne serais pas nécessairement capable de mettre en place une défense de sécurité.
+                Les cours étaient très complets sur la sécurité dans l'IOT. Cependant, nous n'avons pas pratiqué et par conséquent je ne serais pas nécessairement capable de mettre en place une défense de sécurité pour un système. Mais le sujet de mon alternance porte sur le développement d'un robot pour les particuliers, et la notion de sécurité est primordiale. Cela va donc me permmettre de compléter mon apprentissage dans ce domaine.
               </p>
             </blockquote>
           </Col>
@@ -449,7 +454,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
               <br />
               <label>Etre capable de proposer des contre-mesures de sécurité adaptées	</label>
               <ProgressBar
-                completed={70}
+                completed={60}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -494,7 +499,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
                 <br />
                 Concernant le cours de Protocoles de communication, j'ai pu découvir et apprendre quelques protocoles de communications de manière techniques. Je connaissais beaucoup de nom (BLE, WIFI, 5G, Sigfox) de manière général mais sans savoir leurs caractéristiques et leurs spécifités. Avec ce module, je pense avoir compris dans quel cas d'application un protocle est le mieux à utiliser. Ce module parlait abordait souvent les contraintes énergétiques dans le choix de protocole, c'est un sujet pour un AE qui est très important à prendre en compte.
 
-                Le cours de sécurité sur l'IOT, était quelque chose de complètement inconnu pour moi. Les cours avec M. Alatta était intéressant et faisait une bonne introduction à ce domaine. Cependant, il est dommage que nous n'ayons pas eu assez de cas pratiques, car à l'état actuel, je ne me sens pas capable de mettre en place une sécurité pour un système. Il me faudrait plus de recherches et de temps pour savoir comment mettre en place un système de sécurité performant dans de l'embarqué. Mon sujet d'alternance porte sur le développement d'un robot qui se déplace à l'aide de plusieurs capteurs UWB, et la notion de sécurité est un élément important. Je pense donc que je vais beaucoup en apprendre beaucoup dessus et compléter mon apprentissage sur les notions de sécurité.
+                Le cours de sécurité sur l'IOT, était quelque chose de complètement inconnu pour moi. Les cours était intéressant et faisait une bonne introduction à ce domaine. Cependant, il est dommage que nous n'ayons pas eu assez de cas pratiques.
               </p>
             </blockquote>
           </Col>
@@ -520,6 +525,8 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
                 <BsCheckBox /> Connaitre et comprendre les concepts de routeurs SDN <br />
                 <BsCheckBox /> Manipulation d'un routeur SDN pour écrire des règles de routage en Python <br />
                 <BsCheckBox /> Connaitre et comprendre les différents types de récupération d'énergie sans fil <br />
+                <BsCheckBox /> Comprendre les bases de la sécurité et connaitre quelques types d'attaques et défenses<br />
+
 
 
 
@@ -559,7 +566,7 @@ L'objectif de ce cours était de comprendre et découvrir les différents types 
             <Col
             md={3}
           >
-            <a href={nbiot} target="Blank_">
+            <a href={rapportnbiot} target="Blank_">
               <img src={pdflogo} style={{ height: 64, width: 64 }} />
             </a>
             <p aria-hidden="true" ng-show="showTitle" class="thumbnail-name ng-binding">

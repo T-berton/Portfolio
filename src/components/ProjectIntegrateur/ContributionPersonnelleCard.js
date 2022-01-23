@@ -15,10 +15,10 @@ function ContributionPersonnelleCard() {
            <br/> 
            J'ai également développé l'algorithme pour rélever la vitesse de tout objet passant à côté du vélo. Nous avons 
            Lorsqu'un capteur détecte un objet il va enregistrer sa distance, un certain "timestamp" et activer un flag. Lorsque le deuxième objet détecte la même présence à la même distance un deuxième flag est activé. Lorsque ses deux flags sont activés on peut relevé la distance et le temps mesuré par les deux capteurs et ainsi en déduire la vitesse.
-           La figure ci-dessous illustre bien l'algorithme en question.
+        
            <br/> 
            <br/> 
-           Au moment de la récupération des différentes données, il faut ensuite pouvoir l'envoyer au téléphone afin que l'application puisse traiter les informations. Pour cela, nous avons décidér d'utiliser le BLE qui est un protocole de communication avec une faible consommation et fonctionnant à une faible portée, ce qui est idéal pour notre cas d'utilisation. 
+           Au moment de la récupération des différentes données, il faut ensuite pouvoir l'envoyer au téléphone afin que l'application puisse traiter les informations. Pour cela, nous avons décidé d'utiliser le BLE qui est un protocole de communication avec une faible consommation et fonctionnant à une faible portée, ce qui est idéal pour notre cas d'utilisation. 
            Le format de données que nous avons opté est le format JSON. J'ai contribué au développement de la création de la bibliothèque pour initialiser un serveur BLE sur un ESP32. Un téléphone portable peut donc se connecter à l'ESP32, et celui-ci reçoit en format JSON les données des capteurs.
            
             

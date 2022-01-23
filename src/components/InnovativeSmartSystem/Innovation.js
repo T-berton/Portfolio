@@ -87,8 +87,8 @@ function ProjetInnovant() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Pour mettre en oeuvre les concepts appris, nous avons élaboré un briefing pour notre projet innovant. Vous pouvez le trouver ici.
-                Nous avons également fais une présentation pour montrer et expliquer les notions d'évalutions des risques, nos méthodes de gestion par rapport à notre projet innovant.
+                Pour mettre en oeuvre les concepts appris, nous avons élaboré un briefing pour notre projet innovant.
+                Nous avons également fait une présentation pour montrer et expliquer les notions d'évalutions des risques, nos méthodes de gestion par rapport à notre projet innovant.
                 Je n'avais aucune difficulté à appréhender cette matière, car j'ai déjà participé l'an dernier à un concours de jeune entrepreuner dans lequel j'ai dû faire un business plan très détaillé avec toutes les notions cités dans ce cours.
               </p>
 
@@ -217,7 +217,7 @@ function ProjetInnovant() {
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Par binôme, nous devions appliquer la méthode TRIZ sur un objet spécifique afin de l'améliorer. Nous avons d’abord effectué une analyse précise de l’objet en question afin d’identifier une contraction de l’objet. Dans mon cas, nous avons décidé de l'appliquer sur la gourde, et la contradiction que nous avons pu définir est la suivante : « Avoir une gourde à la fois à grand volume mais qui soit également facilement transportable ».
-                Ensuite, en appliquant la méthode TRIZ, nous avons pu élaborer plusieurs solutions pour répondre à cette problématique, vous trouverez tout notre analyse dans ce rapport.
+                Ensuite, en appliquant la méthode TRIZ, nous avons pu élaborer plusieurs solutions pour répondre à cette problématique, vous trouverez en bas tout notre analyse dans un rapport.
 
               </p>
             </blockquote>
@@ -243,7 +243,7 @@ function ProjetInnovant() {
 
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Il est compliqué pour moi de devoir me noter sur ce module dans le sens où je n'ai pas fais encore toutes les matières car je suis en alternance. Mais je pense que grâce à mon expérience professionnelle, j'ai pu acquérir toutes ces notions de travail d'équipe. De plus, j'ai participé l'an dernier à un concours de jeune entrepreneur (CRECE), où j'ai terminé finaliste et j'ai donc énormément appris pour convaincre des gens à adhérer à notre projet et à gérer un projet innovant.
+                Il est compliqué pour moi de devoir me noter sur ce module dans le sens où je n'ai pas fait encore toutes les matières car je suis en alternance. Mais je pense que grâce à mon expérience professionnelle, j'ai pu acquérir toutes ces notions de travail d'équipe. De plus, j'ai participé l'an dernier à un concours de jeune entrepreneur (CRECE), où j'ai terminé finaliste et j'ai donc énormément appris pour convaincre des gens à adhérer à notre projet et à gérer un projet innovant.
             
  
               </p>

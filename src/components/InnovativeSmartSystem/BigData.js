@@ -73,7 +73,7 @@ function BigData() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Le Big Data est au coeur de notre vie quotidienne à travers les objets connectés, les réseaux sociaux.... . Ces cours nous ont permis de découvrir le concept de Machine Learning avec le "Clustering".
+                Le Big Data est au coeur de notre vie quotidienne à travers les objets connectés, les réseaux sociaux... Ces cours nous ont permis de découvrir le concept de Machine Learning avec le "Clustering".
 
               </p>
 
@@ -94,13 +94,13 @@ function BigData() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-                Nous avons réalisés plusieurs travaux pratiques pour appréhender le concept de Clustering. Le but est d'utiliser des approches mathématiques sur des jeux de données, pour pouvoir les classer et former des familles de données qui ont des similitudes entre eux. Nous avons découvert et tester trois différentes méthodes de clustering (KMEAN, DBSCAN et Agglomerative) sur plusieurs type de jeu de données.
+                Nous avons réalisés plusieurs travaux pratiques pour appréhender le concept de Clustering. Le but est d'utiliser des approches mathématiques sur des jeux de données, pour pouvoir les classer et former des familles de données qui ont des similitudes entre eux. Nous avons découvert et tester trois différentes méthodes de clustering (KMEAN, DBSCAN et Agglomerative) sur plusieurs types de jeu de données.
                 <br />
-                Après avoir testé ses dataset sur des jeux de données fictifs, nous devions appliquer ces algorithmes directement sur des dataset réelles afin de concentrer nos éfforts sur l’interpretation et
-                l’analyse des résultats de clustering sur la dataset, mais aussi sur différentes de tranformer notre dataset afin de faciliter sa visualisation.
+                Après avoir testé ses datasets sur des jeux de données fictifs, nous devions appliquer ces algorithmes directement sur des datasets réelles pour nous concentrer essentiellement sur l’interpretation et
+                l’analyse des résultats de clustering, mais aussi sur différentes manières de tranformer ces datasets afin de faciliter sa visualisation.
                 Pour ce qui est du jeu de données, il s’agissait d’un dataframe regroupant des
                 données de pluviométries et autres indicateurs météos et géographiques, et ce
-                sur une année de temps pour 33 villes francaises.
+                sur une année de temps pour 33 villes françaises.
 
               </p>
             </blockquote>
@@ -125,7 +125,7 @@ function BigData() {
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Savoir explorer et représenter des ensembles de données   </label>
               <ProgressBar
-                completed={70}
+                completed={80}
                 labelColor="#ffffff"
                 labelAlignment="center"
                 bgColor="#2d1950"
@@ -137,7 +137,7 @@ function BigData() {
               <br />
               <label> Maitriser la complexité des traitements statistiques et connaitre les techniques de contournement   </label>
               <ProgressBar
-                completed={70}
+                completed={80}
                 // customLabel="Etre capable de fabriquer un capteur à nanoparticules (synthèse chimique, assemblage, test) avec les outils de la micro-électronique  "
                 labelColor="#ffffff"
                 labelAlignment="center"
@@ -228,7 +228,7 @@ function BigData() {
             <div className="mt-3" style={{ textAlign: "start" }}>
               <label>Concevoir et comprendre un modèle conceptuel pour un domaine d'application donné   </label>
               <ProgressBar
-                completed={70}
+                completed={100}
                 labelColor="#ffffff"
                 labelAlignment="center"
                 bgColor="#2d1950"
@@ -302,19 +302,18 @@ function BigData() {
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
                 Ce module comportait des cours très distincts impliquant différents ensembles de compétences. Ce module m'a fait découvrir le monde du Big Data et de l'analyse de données. Il est clair qu'il est important dans l'IOT de pouvoir gérer et analyser toutes ses données massives provenant dee capteurs, actionneurs ou autres systèmes...
                 <br /><br />
-                Le cours de Big Data était une première pour moi dans ce domaine. J'ai beaucoup apprécié l'étude de machine learning à travers plusieurs méthode de clustering. Le langage utilisé était le Python, nous avions déjà appris ce langage.
-                Ce cours reposait beaucoup sur des modèles mathématiques, et comme les algorithmes était déjà donné.
-                C'était tout de même une belle expéience et une belle découverte pour moi.
+                Le cours de Big Data était une première pour moi dans ce domaine. J'ai beaucoup apprécié l'étude de machine learning à travers plusieurs méthodes de clustering. Le langage utilisé était le Python, nous avions déjà appris ce langage.
+                Ce cours reposait beaucoup sur des modèles mathématiques, mais les algorithmes était déjà donné.
                 J'ai eu quelques difficultés au début à comprendre les mathématiques derrière chaque algorithme. Mais j'ai tout de même réussi dans l'ensemble à réaliser l'ensemble des expériences.
 
                 <br /><br />
 
-                Le cours de Web Sémantique était une découverte pour moi. Je n'avais jamais entendu parlé de ce terme, et j'ai eu du mal à comprendre. Heureusement que les deux séances de TP m'ont permis de mieux appréhender ce domaine, et de mieux comprendre l'utilité du Web Semantique. J'ai trouvé que le premier TP était simple à prendre en main et à comprendre, mais le deuxième TP était très compliqué pour moi. D'autres élèves qui étaient plus à l'aise sur ce sujet notamment les élèves d'IR ont pu m'aider à finir ce dernier TP. Il aurait surement fallu que le deuxième TP soit plus guidé pour savoir par quoi commencer par exemple.
+                Le cours de Web Sémantique était une découverte pour moi. Je n'avais jamais entendu parlé de ce terme. Les deux séances de TP m'ont permis de mieux appréhender ce domaine, et de mieux comprendre l'utilité du Web Semantique. J'ai trouvé que le premier TP était simple à prendre en main et à comprendre, mais le deuxième TP était compliqué pour moi. D'autres élèves qui étaient plus à l'aise sur ce sujet notamment les élèves d'IR ont pu m'aider à finir ce dernier TP. Il aurait surement fallu que le deuxième TP soit plus guidé pour savoir par quoi commencer par exemple.
                 <br /><br />
 
-                Concernant l'ingénieur logicielle, je connaissais déjà la plupart des méthodes présentées et j'avais beaucoup d'expérience avec la méthode Agile, notamment lors de mon stage de 4A qui fonctionnait en méthode Agile. Donc je pense que grâce à mon expérience professionnelle et ma formation INSA , j'ai atteins toutes les exigences.
+                Concernant l'ingénieur logicielle, je connaissais déjà la plupart des méthodes présentées et j'avais beaucoup d'expérience avec la méthode Agile, notamment lors de mon stage de 4A qui fonctionnait en méthode Agile. Donc je pense que grâce à mon expérience professionnelle et ma formation INSA , j'ai atteint toutes les exigences.
                 <br /><br />
-                Dans l'ensemble, j'ai compris l'essentielle des notions abordées pour le Web Semantique et le Big Data, mais je ne pense pas plus tard travailler dans ce secteur, ce fut tout de même une belle découverte.
+                Dans l'ensemble, j'ai compris l'essentiel des notions abordées pour le Web Semantique et le Big Data, mais je ne pense pas plus tard travailler dans ce secteur, ce fut tout de même une belle découverte et une bonne expérience.
 
               </p>
             </blockquote>

@@ -19,7 +19,7 @@ function Home2() {
               QUI <span className="purple"> SUIS </span> JE ?
             </h1>
             <p className="home-about-body">
-            Passionné par l’innovation depuis tout jeune, je souhaite contribuer à l’évolution technologique de notre monde.  
+            Passionné par l’innovation depuis tout jeune, je souhaite contribuer à l’évolution technologique.  
               <br />
               <br />Je suis particulièrement à l’aise en programmation dans le domaine des systèmes embarquées, notamment en 
               <i>
@@ -62,14 +62,13 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Pour me <span className="purple">contacter </span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/T-berton"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,34 +76,15 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+             
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/thomas-berton-a93ba5141/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

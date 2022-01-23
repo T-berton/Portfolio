@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-function ProjectCards(props) {
+function ProjectCards2(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img"  style={{ width: 320, resize: "container"}} />
@@ -13,15 +13,15 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Link to={props.chemin}>
+        <a href={props.sample} target="Blank_">
           <Button variant="primary">
             <BiLinkExternal /> &nbsp;
             {props.isBlog ? "View Blog" : "View Project"}
           </Button>
-        </Link>
+          </a>
 
       </Card.Body>
     </Card>
   );
 }
-export default ProjectCards;
+export default ProjectCards2;

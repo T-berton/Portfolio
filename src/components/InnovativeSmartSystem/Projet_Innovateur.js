@@ -20,7 +20,7 @@ function Projet_Innovateur() {
         <Container fluid className="about-section">
             <Particle />
             <Container>
-                <Row style={{ justifyContent: "center", padding: "20px" }}>
+                <Row style={{ justifyContent: "center", padding: "10px" }}>
                     <Col
                         md={12}
                         style={{
@@ -29,10 +29,10 @@ function Projet_Innovateur() {
                             paddingBottom: "10px",
                         }}
                     >
-                        <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                        <a style={{ fontSize: "2.1em"}}>
                             <strong className="purple">  Partie Descriptif et Technique - Projet Innovant </strong>
                         </a>
-                        <p style={{ textAlign: "justify" }}>
+                        <p style={{ textAlign: "center" }}>
                             Vous trouverez  la description et les détails techniques du Projet Innovant  <a href={"/projetintegrateur"}> <strong className="purple"> ici</strong></a>.
 
                         </p>
@@ -41,7 +41,7 @@ function Projet_Innovateur() {
                 </Row>
 
 
-                <Row style={{ justifyContent: "center", padding: "20px" }}>
+                <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={12}
             style={{
@@ -50,7 +50,7 @@ function Projet_Innovateur() {
               paddingBottom: "10px",
             }}
           >
-            <a style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <a style={{ fontSize: "2.1em", paddingBottom: "10px" }}>
               <strong className="purple"> Analyse de l'Unité de Formation  </strong>
             </a>
           </Col>
@@ -151,8 +151,8 @@ function Projet_Innovateur() {
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "left", textAlign: "justify" }}>
-Il s'agit du projet sur lequel je me suis le plus investis ces derniers mois. Notre g                <br /> <br />
-Dans l'ensemble j'ai grandement apprécié réaliser ce projet en groupe. Nous nous sommes très bien répartis les tâches, les IR s'occupaient de la partie software et serveur alors que nous les AE on s'est occupé de la partie embarqué. J'ai découvert beaucoup de choses, notamment la manipulation de capteurs de distance Lidar, ainsi que la mise en place d'un Serveur BLE sur un ESP32. J'ai également grandement appris à utiliser git. N'étant pas très à l'aise sur cet outil, les IR de notre groupe nous ont expliqué comment bien utiliser git et s'organiser pour réaliser notre soft côté embarqué. Il y a eu toute une organisation à faire pour bien se coordonner entre les résultats reçu des capteurs et l'envoie vers l'application Android. Finalement,                 <br /> <br />
+Il s'agit du projet sur lequel je me suis le plus investis ces derniers mois. Notre groupe était composé de deux 2AE (dont moi-même), deux IR et un MSIOT. Nous étions donc très complémentaires dans nos compétences et nous sommes donc répartis les tâches en prenant en compte nos points forts.                <br /> <br />
+Dans l'ensemble j'ai grandement apprécié réaliser ce projet en groupe. Nous nous sommes très bien répartis les tâches, les IR s'occupaient de la partie software et serveur alors que nous les AE nous nous sommes occupés de la partie embarqué. J'ai découvert beaucoup de choses, notamment la manipulation de capteurs de distance Lidar, ainsi que la mise en place d'un Serveur BLE sur un ESP32. J'ai également grandement appris à utiliser git. N'étant pas très à l'aise sur cet outil, les IR de notre groupe nous ont expliqué comment bien utiliser git et s'organiser pour réaliser notre soft côté embarqué. Il y a eu toute une organisation à faire pour bien se coordonner entre les résultats reçu des capteurs et l'envoie vers l'application Android. Nous avons donc réussis à bien travailler ensemble, en équipe et à bien s'organiser.
 
               </p>
             </blockquote>
@@ -171,15 +171,20 @@ Dans l'ensemble j'ai grandement apprécié réaliser ce projet en groupe. Nous n
             </h>
             <blockquote className="blockquote mb-0">
               <p style={{ justifyContent: "justify", textAlign: "justify" }}>
-                <BsCheckBox /> Les standards principaux du domaine de l'IOT  <br />
-                <BsCheckBox /> Déployer une plateforme IOT avec le standard oneM2M<br />
-                <BsCheckBox /> Les principes généraux d'une architecture orientée service  <br />
-                <BsCheckBox /> Déployer une architecture orientée services avec des services web, en utilisant REST/SOAP et un controlleur <br />
-                <BsCheckBox /> Amélioration de mes compétences en Java <br />
-                <BsCheckBox /> Les concepts de cloud computing à travers la virtualisation <br />
-                <BsCheckBox /> Création d'une topologie virtualisé à l'aide d'Openstack <br />
-                <BsCheckBox /> Les différents niveaux de services du cloud computing (IAAS, PAAS, SAAS)<br />
-                <BsCheckBox /> Amélioration de mes compétences pour travailler en équipes grâce aux différents projets <br />
+                <BsCheckBox /> Déployer un serveur BLE pour un microcontroleur  <br />
+                <BsCheckBox /> Déployer une communication entre deux capteurs à travers de l'UART et l'I2C<br />
+                <BsCheckBox /> Mettre en place le format JSON pour envoyer les données à l'application <br />
+                <BsCheckBox /> Amélioration de mes compétences en C++ <br />
+                <BsCheckBox /> Amélioration de mes compétences en Anglais <br />
+                <BsCheckBox /> Programmer des capteurs de distances (ultrasonics et LIDAR)  <br />
+                <BsCheckBox /> Comparer et connaitre les avantages et les inconvénient des différents capteurs de distance <br />
+                <BsCheckBox /> Amélioration de mes compétences pour travailler en équipes <br />
+                <BsCheckBox /> Maitrise de l'outil git pour pouvoir coder ensemble <br />
+                <BsCheckBox /> Amélioration de mes compétences en communication <br />
+                <BsCheckBox /> Comprendre et connaitre un circuit d'alimentation <br />
+                <BsCheckBox /> Comprendre et connaitre des circuits électroniques pour mettre en place un Dynamo afin de faire de la récupération d'énergie <br />
+
+
 
 
 

@@ -5,6 +5,7 @@ function Particle() {
   return (
     <Particles
       params={{
+
         particles: {
           number: {
             value: 160,
@@ -14,12 +15,12 @@ function Particle() {
             },
           },
           line_linked: {
-            enable: false,
+            enable: true,
             opacity: 0.03,
           },
           move: {
             direction: "right",
-            speed: 0.05,
+            speed: 1,
           },
           size: {
             value: 1,
