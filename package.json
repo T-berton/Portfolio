@@ -2,6 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/T-berton/Portfolio"
+  },
   "homepage": "https://t-berton.github.io/Portfolio/",
   "dependencies": {
     "@ramonak/react-progress-bar": "^4.2.0",
