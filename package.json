@@ -2,11 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/T-berton/Portfolio"
-  },
-  "homepage": "https://t-berton.github.io/Portfolio/",
+  "homepage": "https://t-berton.github.io",
   "dependencies": {
     "@ramonak/react-progress-bar": "^4.2.0",
     "@testing-library/jest-dom": "^5.11.6",
